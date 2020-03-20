@@ -2,10 +2,16 @@
   max-width: 80%;
   margin: auto; }
 
+.menu {
+  display: flex; }
+
 .header {
   text-align: center;
   background-color: #579c87;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #fdcb46; }
 
 /*# sourceMappingURL=style.css.map */
