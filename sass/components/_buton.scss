@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+
+    &__prochainement {
+        border:none;
+        padding:10px 70px 10px 70px;
+        border-radius:8px;
+        background:#579c87;
+        font: 13px Arial;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        size: 40px;
+        & a {
+            text-decoration: none;
+            color:#fdcb46;
+            font-size: 40px;
+        
+        }
+    }
+}
