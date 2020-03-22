@@ -3,7 +3,7 @@
 
     &__prochainement {
         border:none;
-        padding:10px 70px 10px 70px;
+        padding:20px 200px 20px 200px;
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
@@ -19,4 +19,36 @@
         
         }
     }
+
+    &__mentions {
+        border:none;
+        padding: 20px 200px 10px 70px;
+        border-radius:8px;
+        background:#579c87;
+        font: 13px Arial;
+        
+        & a {
+            text-decoration: none;
+            color:#fdcb46;
+            font-size: 40px;
+        
+        }
+    }
+
+    &__contact {
+        border:none;
+        padding: 20px 20px 10px 500px;
+        border-radius:8px;
+        background:#579c87;
+        font: 13px Arial;
+        
+        & a {
+            text-decoration: none;
+            color:#fdcb46;
+            font-size: 40px;
+        
+        }
+    }
+
+
 }

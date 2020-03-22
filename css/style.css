@@ -2,47 +2,90 @@
   max-width: 80%;
   margin: auto; }
 
+@font-face {
+  font-family: "Moontells";
+  src: url("MoontellsDemo.ttf"); }
+/*@include font-face ("I Love Glitter", font-files("./font/ILoveGlitter-OTF.otf", "./font/ILoveGlitter-OTF.ttf" ));*/
+/*@include font-face ("I Love Glitter", font-files("./font/ILoveGlitter-OTF.otf", "./font/ILoveGlitter-OTF.ttf" ));*/
 .menu {
   display: flex;
   flex-wrap: wrap; }
   .menu__menu1 {
-    width: 35%;
+    width: 40%;
     margin: auto;
     background-color: #fcdfdb;
     text-align: center;
     padding: initial;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 100px;
     height: 700px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33); }
+    .menu__menu1 a {
+      text-decoration: none;
+      color: black;
+      font-size: 40px;
+      font-family: 'Moontels';
+      font-style: italic;
+      display: block;
+      margin-top: 250px; }
   .menu__menu2 {
     text-align: center;
-    width: 35%;
+    width: 40%;
     background-color: #fff5fe;
     margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-right: 100px;
+    margin-top: 100px;
     height: 700px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33); }
+    .menu__menu2 a {
+      text-decoration: none;
+      font-size: 40px;
+      font-family: 'Moontels';
+      display: block;
+      margin-top: 250px; }
+      .menu__menu2 a h2 {
+        color: #ce7d4e; }
+    .menu__menu2__degrade {
+      background: -webkit-linear-gradient(left, #ce7d4e, #905bfd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .menu__menu3 {
-    width: 35%;
-    margin: auto;
+    width: 40%;
     background-color: #f9f9f9;
     text-align: center;
     padding: initial;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin: auto;
+    margin-top: 100px;
     height: 700px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33); }
+    .menu__menu3 a {
+      text-decoration: none;
+      font-size: 40px;
+      font-family: 'I Love Glitter';
+      display: block;
+      margin-top: 250px; }
+    .menu__menu3__degrade {
+      background: -webkit-linear-gradient(left, #2140df, #1b91fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .menu__menu4 {
     text-align: center;
-    width: 35%;
+    width: 40%;
     background-color: #fdfffd;
     margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-right: 100px;
+    margin-top: 100px;
     height: 700px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33); }
+    .menu__menu4 a {
+      text-decoration: none;
+      font-family: 'ILoveGlitter-OTF';
+      font-size: 40px;
+      display: block;
+      margin-top: 250px; }
+    .menu__menu4__degrade {
+      background: -webkit-linear-gradient(left, #56a847, #bfff7e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .header {
   text-align: center;
@@ -61,7 +104,7 @@
   display: flex; }
   .btn__prochainement {
     border: none;
-    padding: 10px 70px 10px 70px;
+    padding: 20px 200px 20px 200px;
     border-radius: 8px;
     background: #579c87;
     font: 13px Arial;
@@ -71,6 +114,26 @@
     margin-right: auto;
     size: 40px; }
     .btn__prochainement a {
+      text-decoration: none;
+      color: #fdcb46;
+      font-size: 40px; }
+  .btn__mentions {
+    border: none;
+    padding: 20px 200px 10px 70px;
+    border-radius: 8px;
+    background: #579c87;
+    font: 13px Arial; }
+    .btn__mentions a {
+      text-decoration: none;
+      color: #fdcb46;
+      font-size: 40px; }
+  .btn__contact {
+    border: none;
+    padding: 20px 20px 10px 500px;
+    border-radius: 8px;
+    background: #579c87;
+    font: 13px Arial; }
+    .btn__contact a {
       text-decoration: none;
       color: #fdcb46;
       font-size: 40px; }
