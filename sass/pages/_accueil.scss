@@ -1,4 +1,4 @@
-/*@include font-face ("I Love Glitter", font-files("./font/ILoveGlitter-OTF.otf", "./font/ILoveGlitter-OTF.ttf" ));*/
+
 
 .menu {
     display: flex;
@@ -14,6 +14,8 @@
         height: 700px;
         box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
 
+        
+
         & a {
             text-decoration: none;
             color: black;
@@ -22,8 +24,16 @@
             font-style: italic;
             display: block;
             margin-top: 250px;
-        }
 
+            
+        }
+        
+        & :hover{
+            z-index: 2;
+            transition: all 300ms ease-in;
+            transform: scale(1.2);
+            opacity: 0.5;
+            }
         
     }
 
@@ -58,6 +68,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        & :hover{
+            z-index: 2;
+            transition: all 300ms ease-in;
+            transform: scale(1.2);
+            opacity: 0.5;
+            }
     }
 
     &__menu3 {
@@ -115,7 +132,7 @@
 
         &__degrade {
             
-            background: -webkit-linear-gradient( left, #56a847, #bfff7e);
+            background: -webkit-linear-gradient( left, #4da83d, #daffb5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -123,3 +140,10 @@
 
 }
 
+.fal {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: black;
+
+}

@@ -7,7 +7,7 @@
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -26,21 +26,103 @@
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
+        display: flex;
+
+        & :hover {
+            
+            animation-name: angry-animation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
         
         & a {
             text-decoration: none;
             color:#fdcb46;
             font-size: 40px;
+
+           
         
         }
     }
 
+    @keyframes angry-animation {
+        0%{
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+        5%{
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        10%{
+          -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        15%{
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        20%{
+          -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        25%{
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        30%{
+          -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        35%{
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        40%{
+          -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        45%{
+          -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        50%{
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+
     &__contact {
         border:none;
-        padding: 20px 20px 10px 500px;
+        padding: 20px 20px 10px 600px;
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
+        display: flex;
+
+        & :hover {
+            
+            animation-name: angry-animation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
         
         & a {
             text-decoration: none;
