@@ -1,3 +1,50 @@
+$num-bars: 3;
+$anim-dur: 1.2s;
+$anim-delay: $anim-dur / $num-bars;
+
+$breakpoint: (
+    mobile: 599px
+);
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoint, mobile )){
+        width: 100%;
+        padding: 1px;
+        font-size: 20px;
+
+    }
+}
+@keyframes points {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40%{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60%{
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .btn {
     display: flex;
 
@@ -12,13 +59,43 @@
         margin-left: auto;
         margin-right: auto;
         size: 40px;
+        @include mobile-only;
         & a {
             text-decoration: none;
             color:#fdcb46;
             font-size: 40px;
-        
+          @include mobile-only;
         }
+
+        .fa-circle  {
+          animation-name: points;
+
+          @for $i from 1 through $num-bars {
+            &--#{$i} {
+              animation-delay: $anim-delay * $i;
+              display: inline-block;
+            color: #fdcb46;
+            width: 10px;
+            height: 10px;
+            font-size: 3em;
+            background-color: #fdcb46;
+            margin: 10px;
+            border-radius: 50%;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-name: points;
+            animation-duration: $anim-dur;
+            }
+          }
+            
+          }
+        
+
+        
     }
+
+    
 
     &__mentions {
         border:none;
@@ -27,7 +104,7 @@
         background:#579c87;
         font: 13px Arial;
         display: flex;
-
+      @include mobile-only;
         & :hover {
             
             animation-name: angry-animation;
@@ -42,7 +119,7 @@
             text-decoration: none;
             color:#fdcb46;
             font-size: 40px;
-
+          @include mobile-only;
            
         
         }
@@ -108,12 +185,12 @@
 
     &__contact {
         border:none;
-        padding: 20px 20px 10px 600px;
+        padding: 20px 20px 10px 650px;
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
         display: flex;
-
+      @include mobile-only;
         & :hover {
             
             animation-name: angry-animation;
@@ -128,6 +205,7 @@
             text-decoration: none;
             color:#fdcb46;
             font-size: 40px;
+              @include mobile-only;
         
         }
     }

@@ -1,4 +1,25 @@
+$breakpoint: (
+    mobile: 599px
+);
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoint, mobile )){
+        width: auto;
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+
+
 .footer {
     background-color: #579c87;
     height: 80px;
+    position: fixed;
+    bottom: 10px;
+    width: 80%;
+    margin: auto;
+    
+    @include mobile-only;
 }
+
