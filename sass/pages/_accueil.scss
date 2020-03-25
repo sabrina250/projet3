@@ -26,7 +26,7 @@ $breakpoint: (
         margin-top: 100px;
         height: 700px;
         box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
-
+        
         @include mobile-only;
         
 
@@ -34,7 +34,7 @@ $breakpoint: (
             text-decoration: none;
             color: black;
             font-size: 40px;
-            font-family: 'Moontels';
+            font-family: 'MoontelsDemo';
             font-style: italic;
             display: block;
             margin-top: 250px;
@@ -66,7 +66,7 @@ $breakpoint: (
             
             
             font-size: 40px;
-            font-family: 'Moontels';
+            
             
             display: block;
             margin-top: 250px;
@@ -141,7 +141,7 @@ $breakpoint: (
         & a {
             text-decoration: none;
             
-            font-family: 'ILoveGlitter-OTF';
+            font-family: 'ShadowsIntoLight';
             font-size: 40px;
             
             
