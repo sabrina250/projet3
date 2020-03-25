@@ -1,5 +1,5 @@
 $num-bars: 3;
-$anim-dur: 1.2s;
+$anim-dur: 2s;
 $anim-delay: $anim-dur / $num-bars;
 
 $breakpoint: (
@@ -8,9 +8,10 @@ $breakpoint: (
 
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoint, mobile )){
-        width: 100%;
-        padding: 1px;
+        
+        padding: 10px;
         font-size: 20px;
+        height: 50px;
 
     }
 }
@@ -24,8 +25,8 @@ $breakpoint: (
     transform: translateY(0);
   }
   40%{
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   50%{
     -webkit-transform: translateY(0);
@@ -35,10 +36,10 @@ $breakpoint: (
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
-  80%{
+  /*80%{
     -webkit-transform: translateY(0);
     transform: translateY(0);
-  }
+  }*/
   100%{
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -79,7 +80,10 @@ $breakpoint: (
             height: 10px;
             font-size: 3em;
             background-color: #fdcb46;
-            margin: 10px;
+            margin-bottom: 1px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
             border-radius: 50%;
             animation-timing-function: ease-out;
             animation-iteration-count: infinite;
@@ -185,7 +189,7 @@ $breakpoint: (
 
     &__contact {
         border:none;
-        padding: 20px 20px 10px 650px;
+        padding: 20px 20px 10px 600px;
         border-radius:8px;
         background:#579c87;
         font: 13px Arial;
