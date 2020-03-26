@@ -2,20 +2,13 @@ $breakpoint: (
     mobile: 599px
 );
 
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
-        max-width: 100%;
-        margin: 0px;
-        
 
-    }
-}
 
 .container {
     
     max-width: 80%;
     margin: auto;
-    @include mobile-only;
+    @include mobile-only-base;
     
 }
 

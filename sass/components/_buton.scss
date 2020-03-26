@@ -1,50 +1,6 @@
-$num-bars: 3;
-$anim-dur: 2s;
-$anim-delay: $anim-dur / $num-bars;
 
-$breakpoint: (
-    mobile: 599px
-);
 
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
-        
-        padding: 10px;
-        font-size: 20px;
-        height: 50px;
 
-    }
-}
-@keyframes points {
-  0%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  20%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40%{
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  50%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  60%{
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-  /*80%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }*/
-  100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 
 .btn {
     display: flex;
@@ -53,23 +9,22 @@ $breakpoint: (
         border:none;
         padding:20px 200px 20px 200px;
         border-radius:8px;
-        background:#579c87;
+        background: $colorsecondaire;
         font: 13px Arial;
         margin-bottom: 150px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         size: 40px;
-        @include mobile-only;
+        @include mobile-only-buton;
         & a {
-            text-decoration: none;
-            color:#fdcb46;
-            font-size: 40px;
-          @include mobile-only;
+          @include buton-a;
+          @include mobile-only-buton;
         }
 
         .fa-circle  {
-          animation-name: points;
+          @include points-prochainement;
+          animation-name: points-prochainement;
 
           @for $i from 1 through $num-bars {
             &--#{$i} {
@@ -105,12 +60,12 @@ $breakpoint: (
         border:none;
         padding: 20px 200px 10px 70px;
         border-radius:8px;
-        background:#579c87;
+        background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include mobile-only;
+      @include mobile-only-buton;
         & :hover {
-            
+            @include wiggle;
             animation-name: angry-animation;
             animation-duration: 1s;
             animation-timing-function: linear;
@@ -120,83 +75,26 @@ $breakpoint: (
         }
         
         & a {
-            text-decoration: none;
-            color:#fdcb46;
-            font-size: 40px;
-          @include mobile-only;
+            @include buton-a;
+          @include mobile-only-buton;
            
         
         }
     }
 
-    @keyframes angry-animation {
-        0%{
-          -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-          transform: translateX(0);
-        }
-        5%{
-          -webkit-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-        10%{
-          -webkit-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          transform: translateX(10px);
-        }
-        15%{
-          -webkit-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-        20%{
-          -webkit-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          transform: translateX(10px);
-        }
-        25%{
-          -webkit-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-        30%{
-          -webkit-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          transform: translateX(10px);
-        }
-        35%{
-          -webkit-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-        40%{
-          -webkit-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          transform: translateX(10px);
-        }
-        45%{
-          -webkit-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
-        }
-        50%{
-          -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-          transform: translateX(0);
-        }
-      }
+    
 
     &__contact {
         border:none;
         padding: 20px 20px 10px 600px;
         border-radius:8px;
-        background:#579c87;
+        background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include mobile-only;
+      @include mobile-only-buton;
+
         & :hover {
-            
+            @include wiggle;
             animation-name: angry-animation;
             animation-duration: 1s;
             animation-timing-function: linear;
@@ -206,10 +104,8 @@ $breakpoint: (
         }
         
         & a {
-            text-decoration: none;
-            color:#fdcb46;
-            font-size: 40px;
-              @include mobile-only;
+          @include buton-a;
+          @include mobile-only-buton;
         
         }
     }

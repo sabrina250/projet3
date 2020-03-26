@@ -1,19 +1,4 @@
 
-$breakpoint: (
-    mobile: 599px
-);
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
-        width: 90%;
-        margin: auto;
-        height: 400px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    }
-
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -22,34 +7,24 @@ $breakpoint: (
     
    
     &__menu1 {
-        width: 40%;
-        margin: auto;
-        background-color: #fcdfdb;
-        text-align: center;
-        padding: initial;
-        margin-top: 100px;
-        height: 700px;
-        box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
-        
-        @include mobile-only;
+        @include menu-acceuil;
+        background-color: $color-menu1;
+        @include mobile-only-acceuil;
         & :hover{
-            z-index: 2;
-            transition: all 300ms ease-in;
-            transform: scale(1.2);
-            opacity: 0.5;
+            @include menu-hover;
             }
 
         & a {
-            text-decoration: none;
-            color: black;
-            font-size: 40px;
-            font-family: 'MoontelsDemo';
-            font-style: italic;
-            display: block;
-            margin-top: 250px;
-            @include mobile-only;
+            @include menu-a;
+            @include mobile-only-acceuil;
             
                 
+        }
+
+        &__img {
+
+            @include menu-img;
+            @include menu-img-mobile;
         }
         
         
@@ -57,120 +32,80 @@ $breakpoint: (
     }
 
     &__menu2 {
-        text-align: center;
-        width: 40%;
-        background-color: #fff5fe;
-        margin-left: 40px;
-        margin-right: 100px;
-        margin-top: 100px;
-        height: 700px;
-        box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
-        @include mobile-only;
+        @include menu-acceuil;
+        background-color: $color-menu2;
+        @include mobile-only-acceuil;
         & a {
-            @include mobile-only;
-            text-decoration: none;
+            @include mobile-only-acceuil;
+            @include menu-a;
             
-            
-            font-size: 40px;
-            
-            
-            display: block;
-            margin-top: 250px;
-
-            & h2 {
-                color:#ce7d4e;
-            }
         }
 
-        &__degrade {
-            
-            background: -webkit-linear-gradient( left, #ce7d4e, #905bfd);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        
 
         & :hover{
-            z-index: 2;
-            transition: all 300ms ease-in;
-            transform: scale(1.2);
-            opacity: 0.5;
-            }
+            @include menu-hover;
+        }
+
+        &__img {
+
+            @include menu-img;
+            @include menu-img-mobile;
+        }
     }
 
     &__menu3 {
-        width: 40%;
         
-        background-color: #f9f9f9 ;
-        text-align: center;
-        padding: initial;
-        margin: auto;
-        margin-top: 100px;
-        height: 700px;
-        box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
-        @include mobile-only;
+        
+        background-color: $color-menu3 ;
+        @include menu-acceuil;
+        @include mobile-only-acceuil;
         & a {
-            @include mobile-only;
-            text-decoration: none;
+            @include menu-a;
+            @include mobile-only-acceuil;
             
-            
-            font-size: 40px;
             font-family: 'I Love Glitter';
-            
-            display: block;
-            margin-top: 250px;
+                    
+
         }
 
-        &__degrade {
-            
-            background: -webkit-linear-gradient( left, #2140df, #1b91fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
         & :hover{
-            z-index: 2;
-            transition: all 300ms ease-in;
-            transform: scale(1.2);
-            opacity: 0.5;
+            @include menu-hover;
             }
+
+         &__img {
+
+        @include menu-img;     
+        @include menu-img-mobile;   
+        }
             
     }
 
     &__menu4 {
-        text-align: center;
-        width: 40%;
-        background-color: #fdfffd;
-        margin-left: 40px;
-        margin-right: 100px;
-        margin-top: 100px;
-        height: 700px;
-        box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
-        @include mobile-only;
+        @include menu-acceuil;
+        background-color: $color-menu4;
+        
+        @include mobile-only-acceuil;
         & a {
-            @include mobile-only;
-            text-decoration: none;
+            @include mobile-only-acceuil;
+            @include menu-a;
             
-            font-family: 'ShadowsIntoLight';
-            font-size: 40px;
+            font-family: 'Shadows Into Light';
             
-            
-            display: block;
-            margin-top: 250px;
         }
 
-        &__degrade {
-            
-            background: -webkit-linear-gradient( left, #4da83d, #daffb5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
 
         & :hover{
-            z-index: 2;
-            transition: all 300ms ease-in;
-            transform: scale(1.2);
-            opacity: 0.5;
+            @include menu-hover;
             }
+
+            &__img {
+                @include menu-img;
+                @include menu-img-mobile;
+        }
     }
 }
+
+
 
 

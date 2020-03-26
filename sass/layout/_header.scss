@@ -1,20 +1,8 @@
-$breakpoint: (
-    mobile: 599px
-);
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
-        width: 100%;
-        margin: auto;
-        font-size: 15px;
-
-    }
-}
 
 
 .header {
     text-align: center;
-    background-color:#579c87 ;
+    background-color: $colorsecondaire ;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: sans-serif;
@@ -22,6 +10,6 @@ $breakpoint: (
     color: #fdcb46;
     width: 100%;
     margin: auto;
-    @include mobile-only;
+    @include mobile-only-header;
     
 }
