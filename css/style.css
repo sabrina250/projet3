@@ -163,8 +163,7 @@
       display: block;
       margin-top: 250px;
       text-decoration: none;
-      font-size: 40px;
-      font-family: 'Shadows Into Light'; }
+      font-size: 40px; }
       @media screen and (max-width: 599px) {
         .menu__menu4 a {
           width: 90%;
