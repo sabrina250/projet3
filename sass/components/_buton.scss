@@ -4,6 +4,7 @@
 
 .btn {
     display: flex;
+    margin: auto;
 
     &__prochainement {
         border:none;
@@ -57,8 +58,8 @@
     
 
     &__mentions {
-        border:none;
-        padding: 20px 200px 10px 70px;
+        margin: auto;
+        
         border-radius:8px;
         background:$colorsecondaire;
         font: 13px Arial;
@@ -86,7 +87,7 @@
 
     &__contact {
         border:none;
-        padding: 20px 20px 10px 600px;
+        margin: auto;
         border-radius:8px;
         background:$colorsecondaire;
         font: 13px Arial;

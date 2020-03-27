@@ -3,8 +3,8 @@
     background-color: $colorsecondaire;
     height: 80px;
     position: fixed;
-    bottom: 10px;
-    width: 80%;
+    bottom: 5px;
+    width: 100%;
     margin: auto;
     
     @include mobile-only-footer;

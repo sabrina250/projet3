@@ -1,3 +1,87 @@
 h2 {
     font-family: 'Devonshire', cursive;
+    font-size: 70px;
+    margin: auto;
+    text-align: center;
 }
+
+h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 50px;
+    font-family: 'Devonshire', cursive;
+}
+
+th {
+    display: flex;
+}
+
+td {
+    font-family: 'Devonshire', cursive;
+    font-size: 30px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+
+
+
+.menu1 {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    &__main {
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        background-color: $color-menu1 ;
+
+    &__img {
+        display: flex;
+        margin: auto;
+        
+
+    }
+}
+
+    &__prelude {
+        
+        margin: auto;
+        
+
+        & img {
+            
+            margin: auto;
+        }
+
+    }
+
+    &__pointdorgue {
+        margin: auto;
+
+
+        & img {
+            margin: auto;
+        }
+    }
+
+    &__mouvementfinal {
+        margin: auto;
+
+
+        & img {
+            margin: auto;
+        }
+    }
+}
+
+.logo-fin {
+    display: flex;
+    margin: auto;
+
+}
+

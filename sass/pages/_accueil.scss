@@ -1,6 +1,8 @@
 
 .menu {
+    width: 80%;
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
 
      
@@ -10,26 +12,41 @@
         @include menu-acceuil;
         background-color: $color-menu1;
         @include mobile-only-acceuil;
+        font-family: 'Devonshire', cursive;
+        
         & :hover{
             @include menu-hover;
-            }
+        }
 
         & a {
+            color: black;
             @include menu-a;
             @include mobile-only-acceuil;
+            
             
                 
         }
 
-        &__img {
+
+        
+
+        & img {
 
             @include menu-img;
             @include menu-img-mobile;
+        }
+
+        &__gras {
+            font-weight: bold;
+            font-family: 'lucida', sans-serif;
         }
         
         
         
     }
+
+
+    
 
     &__menu2 {
         @include menu-acceuil;
@@ -105,7 +122,6 @@
         }
     }
 }
-
 
 
 

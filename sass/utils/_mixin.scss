@@ -1,6 +1,6 @@
 @mixin menu-acceuil {
         text-align: center;
-        
+        display: flex;
         margin-top: 100px;
         height: 900px;
         box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
@@ -83,10 +83,12 @@
 
 @mixin menu-a {
         
-    display: block;
-    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 60px;
+
 }
 
 
