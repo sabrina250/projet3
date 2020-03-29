@@ -1,0 +1,82 @@
+
+
+h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 50px;
+    
+    
+}
+
+th {
+    display: flex;
+}
+
+td {
+    
+    font-size: 30px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+
+
+
+.menu2 {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: 'Parisienne';
+    &__main {
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        background-color: $color-menu2 ;
+
+        &__titre {
+        font-size: 60px;
+        margin: auto;
+        text-align: center;
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
+        }
+
+    
+}
+
+    &__appetit {
+        
+        margin: auto;
+        color: #c67412;
+        font-family: 'Parisienne';
+        & img {
+            
+            margin: auto;
+        }
+
+    }
+
+    &__plaisir {
+        margin: auto;
+        color: #a46498;
+        font-family: 'Parisienne';
+        & img {
+            margin: auto;
+        }
+    }
+
+    &__gourmandises {
+        margin: auto;
+        color: #6e4ccc;
+        font-family: 'Parisienne';
+        & img {
+            margin: auto;
+        }
+    }
+}

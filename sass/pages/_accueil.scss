@@ -34,6 +34,7 @@
 
             @include menu-img;
             @include menu-img-mobile;
+            
         }
 
         &__gras {
@@ -55,7 +56,9 @@
         & a {
             @include mobile-only-acceuil;
             @include menu-a;
-            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
         }
 
         
@@ -80,8 +83,10 @@
         & a {
             @include menu-a;
             @include mobile-only-acceuil;
-            
-            font-family: 'I Love Glitter';
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
+            font-family: 'Parisienne', cursive;
                     
 
         }
@@ -106,7 +111,10 @@
         & a {
             @include mobile-only-acceuil;
             @include menu-a;
-            
+            font-family: 'Kalam', cursive;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
             
             
         }

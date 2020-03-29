@@ -1,15 +1,26 @@
-h2 {
-    font-family: 'Devonshire', cursive;
-    font-size: 70px;
-    margin: auto;
-    text-align: center;
-}
+
 
 h3 {
+    position: relative;
     margin-left: 50px;
     margin-right: 50px;
     font-size: 50px;
-    font-family: 'Devonshire', cursive;
+
+    & :hover {
+        content: '';
+        position: absolute;
+        background: black;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        transition: width 500ms ease;
+      }
+       
+      & :hover:after {
+        width: 100%;
+      }
+    
 }
 
 th {
@@ -17,7 +28,7 @@ th {
 }
 
 td {
-    font-family: 'Devonshire', cursive;
+   
     font-size: 30px;
 }
 
@@ -32,6 +43,7 @@ tr {
     max-width: 100%;
     margin: auto;
     margin-bottom: 80px;
+    font-family: 'Devonshire', cursive;
     &__main {
         
         display: flex;
@@ -39,19 +51,26 @@ tr {
         margin: auto;
         width: 80%;
         background-color: $color-menu1 ;
-
-    &__img {
-        display: flex;
-        margin: auto;
+        &__img {
+            display: flex;
+            margin: auto;
         
 
     }
+
+        &__titre {
+            font-size: 70px;
+            margin: auto;
+            text-align: center;
+            
+        }
+        
 }
 
     &__prelude {
         
         margin: auto;
-        
+        font-family: 'Devonshire', cursive;
 
         & img {
             
@@ -62,7 +81,7 @@ tr {
 
     &__pointdorgue {
         margin: auto;
-
+        font-family: 'Devonshire', cursive;
 
         & img {
             margin: auto;
@@ -71,7 +90,7 @@ tr {
 
     &__mouvementfinal {
         margin: auto;
-
+        font-family: 'Devonshire', cursive;
 
         & img {
             margin: auto;

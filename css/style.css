@@ -97,7 +97,10 @@
       flex-direction: column;
       margin: auto;
       text-decoration: none;
-      font-size: 60px; }
+      font-size: 60px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
       @media screen and (max-width: 599px) {
         .menu__menu2 a {
           width: 90%;
@@ -117,7 +120,7 @@
           width: 100%;
           margin: auto; } }
   .menu__menu3 {
-    background-color: #f9f9f9;
+    background-color: #edefef;
     text-align: center;
     display: flex;
     margin-top: 100px;
@@ -138,7 +141,10 @@
       margin: auto;
       text-decoration: none;
       font-size: 60px;
-      font-family: 'I Love Glitter'; }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #0231df, #0889fb);
+      font-family: 'Parisienne', cursive; }
       @media screen and (max-width: 599px) {
         .menu__menu3 a {
           width: 90%;
@@ -178,7 +184,11 @@
       flex-direction: column;
       margin: auto;
       text-decoration: none;
-      font-size: 60px; }
+      font-size: 60px;
+      font-family: 'Kalam', cursive;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
       @media screen and (max-width: 599px) {
         .menu__menu4 a {
           width: 90%;
@@ -484,23 +494,27 @@
           font-size: 20px;
           height: 50px; } }
 
-h2 {
-  font-family: 'Devonshire', cursive;
-  font-size: 70px;
-  margin: auto;
-  text-align: center; }
-
 h3 {
+  position: relative;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 50px;
-  font-family: 'Devonshire', cursive; }
+  font-size: 50px; }
+  h3 :hover {
+    content: '';
+    position: absolute;
+    background: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transition: width 500ms ease; }
+  h3 :hover:after {
+    width: 100%; }
 
 th {
   display: flex; }
 
 td {
-  font-family: 'Devonshire', cursive;
   font-size: 30px; }
 
 tr {
@@ -509,7 +523,8 @@ tr {
 .menu1 {
   max-width: 100%;
   margin: auto;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  font-family: 'Devonshire', cursive; }
   .menu1__main {
     display: flex;
     flex-direction: column;
@@ -519,21 +534,175 @@ tr {
     .menu1__main__img {
       display: flex;
       margin: auto; }
+    .menu1__main__titre {
+      font-size: 70px;
+      margin: auto;
+      text-align: center; }
   .menu1__prelude {
-    margin: auto; }
+    margin: auto;
+    font-family: 'Devonshire', cursive; }
     .menu1__prelude img {
       margin: auto; }
   .menu1__pointdorgue {
-    margin: auto; }
+    margin: auto;
+    font-family: 'Devonshire', cursive; }
     .menu1__pointdorgue img {
       margin: auto; }
   .menu1__mouvementfinal {
-    margin: auto; }
+    margin: auto;
+    font-family: 'Devonshire', cursive; }
     .menu1__mouvementfinal img {
       margin: auto; }
 
 .logo-fin {
   display: flex;
   margin: auto; }
+
+h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px; }
+
+th {
+  display: flex; }
+
+td {
+  font-size: 30px; }
+
+tr {
+  margin-bottom: 10px; }
+
+.menu2 {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+  font-family: 'Parisienne'; }
+  .menu2__main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    background-color: #fff5fe; }
+    .menu2__main__titre {
+      font-size: 60px;
+      margin: auto;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
+  .menu2__appetit {
+    margin: auto;
+    color: #c67412;
+    font-family: 'Parisienne'; }
+    .menu2__appetit img {
+      margin: auto; }
+  .menu2__plaisir {
+    margin: auto;
+    color: #a46498;
+    font-family: 'Parisienne'; }
+    .menu2__plaisir img {
+      margin: auto; }
+  .menu2__gourmandises {
+    margin: auto;
+    color: #6e4ccc;
+    font-family: 'Parisienne'; }
+    .menu2__gourmandises img {
+      margin: auto; }
+
+h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px; }
+
+th {
+  display: flex; }
+
+td {
+  font-size: 30px; }
+
+tr {
+  margin-bottom: 10px; }
+
+.menu3 {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+  font-family: 'Parisienne', cursive; }
+  .menu3__main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    background-color: #edefef; }
+    .menu3__main__titre {
+      font-size: 60px;
+      margin: auto;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #0231df, #0889fb); }
+  .menu3__commencer {
+    margin: auto;
+    font-family: 'Parisienne', cursive; }
+    .menu3__commencer img {
+      margin: auto; }
+  .menu3__continuer {
+    margin: auto;
+    font-family: 'Parisienne', cursive; }
+    .menu3__continuer img {
+      margin: auto; }
+  .menu3__terminer {
+    margin: auto;
+    font-family: 'Parisienne', cursive; }
+    .menu3__terminer img {
+      margin: auto; }
+
+h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px; }
+
+th {
+  display: flex; }
+
+td {
+  font-size: 30px; }
+
+tr {
+  margin-bottom: 10px; }
+
+.menu4 {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+  font-family: 'Kalam', cursive; }
+  .menu4__main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    background-color: #fdfffd; }
+    .menu4__main__titre {
+      font-size: 60px;
+      margin: auto;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
+  .menu4__esquisse {
+    margin: auto;
+    font-family: 'Kalam', cursive; }
+    .menu4__esquisse img {
+      margin: auto; }
+  .menu4__oeuvre {
+    margin: auto;
+    font-family: 'Kalam', cursive; }
+    .menu4__oeuvre img {
+      margin: auto; }
+  .menu4__sommet {
+    margin: auto;
+    font-family: 'Kalam', cursive; }
+    .menu4__sommet img {
+      margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

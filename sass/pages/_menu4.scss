@@ -1,0 +1,80 @@
+h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 50px;
+    
+    
+}
+
+th {
+    display: flex;
+}
+
+td {
+    
+    font-size: 30px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+
+
+
+.menu4 {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: 'Kalam', cursive;
+    &__main {
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        background-color: $color-menu4 ;
+
+        &__titre {
+        font-size: 60px;
+        margin: auto;
+        text-align: center;
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
+        }
+
+    
+}
+
+    &__esquisse {
+        
+        margin: auto;
+        
+        font-family: 'Kalam', cursive;
+        & img {
+            
+            margin: auto;
+        }
+
+    }
+
+    &__oeuvre {
+        margin: auto;
+        
+        font-family: 'Kalam', cursive;
+        & img {
+            margin: auto;
+        }
+    }
+
+    &__sommet {
+        margin: auto;
+        
+        font-family: 'Kalam', cursive;
+        & img {
+            margin: auto;
+        }
+    }
+}
