@@ -51,7 +51,7 @@
     .menu__menu1 :hover {
       transition: all 300ms ease-in;
       transform: scale(1.2);
-      opacity: 0.8; }
+      z-index: 1; }
     .menu__menu1 a {
       color: black;
       display: flex;
@@ -111,7 +111,7 @@
     .menu__menu2 :hover {
       transition: all 300ms ease-in;
       transform: scale(1.2);
-      opacity: 0.8; }
+      z-index: 1; }
     .menu__menu2__img {
       width: 70%;
       margin: auto; }
@@ -155,7 +155,7 @@
     .menu__menu3 :hover {
       transition: all 300ms ease-in;
       transform: scale(1.2);
-      opacity: 0.8; }
+      z-index: 1; }
     .menu__menu3__img {
       width: 70%;
       margin: auto; }
@@ -199,7 +199,7 @@
     .menu__menu4 :hover {
       transition: all 300ms ease-in;
       transform: scale(1.2);
-      opacity: 0.8; }
+      z-index: 1; }
     .menu__menu4__img {
       width: 70%;
       margin: auto; }
@@ -279,18 +279,17 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
   50% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px); }
-  /*80%{
     -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }*/
+    transform: translateY(); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
@@ -350,6 +349,7 @@
         animation-duration: 2s; }
   .btn__mentions {
     margin: auto;
+    margin-right: 600px;
     border-radius: 8px;
     background: #579c87;
     font: 13px Arial;
@@ -414,7 +414,8 @@
     .btn__mentions a {
       text-decoration: none;
       color: #fdcb46;
-      font-size: 40px; }
+      font-size: 40px;
+      margin-top: 5%; }
       @media screen and (max-width: 599px) {
         .btn__mentions a {
           padding: 10px;
@@ -487,7 +488,8 @@
     .btn__contact a {
       text-decoration: none;
       color: #fdcb46;
-      font-size: 40px; }
+      font-size: 40px;
+      margin-top: 5%; }
       @media screen and (max-width: 599px) {
         .btn__contact a {
           padding: 10px;

@@ -5,6 +5,7 @@
 .btn {
     display: flex;
     margin: auto;
+    
 
     &__prochainement {
         border:none;
@@ -59,7 +60,7 @@
 
     &__mentions {
         margin: auto;
-        
+        margin-right: 600px;
         border-radius:8px;
         background:$colorsecondaire;
         font: 13px Arial;
@@ -77,6 +78,7 @@
         
         & a {
             @include buton-a;
+            margin-top: 5%;
           @include mobile-only-buton;
            
         
@@ -102,10 +104,12 @@
             animation-delay: 0s;
             animation-iteration-count: infinite;
             animation-direction: normal;
+            
         }
         
         & a {
           @include buton-a;
+          margin-top: 5%;
           @include mobile-only-buton;
         
         }
