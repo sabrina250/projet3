@@ -496,23 +496,6 @@
           font-size: 20px;
           height: 50px; } }
 
-h3 {
-  position: relative;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 50px; }
-  h3 :hover {
-    content: '';
-    position: absolute;
-    background: black;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    transition: width 500ms ease; }
-  h3 :hover:after {
-    width: 100%; }
-
 th {
   display: flex; }
 
@@ -540,30 +523,106 @@ tr {
       font-size: 70px;
       margin: auto;
       text-align: center; }
-  .menu1__prelude {
+  .menu1__entrees {
     margin: auto;
-    font-family: 'Devonshire', cursive; }
-    .menu1__prelude img {
+    font-family: 'Kalam', cursive;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: left; }
+    .menu1__entrees__prix {
+      margin-right: 200px; }
+    .menu1__entrees__titre {
+      display: flex;
+      font-size: 40px;
+      margin-top: 20px;
+      font-weight: bold; }
+    .menu1__entrees__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
+    .menu1__entrees img {
       margin: auto; }
-  .menu1__pointdorgue {
+  .menu1__plat {
     margin: auto;
-    font-family: 'Devonshire', cursive; }
-    .menu1__pointdorgue img {
+    font-family: 'Kalam', cursive;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: left; }
+    .menu1__plat__prix {
+      margin-right: 200px; }
+    .menu1__plat__titre {
+      font-size: 40px;
+      display: flex;
+      margin-top: 50px;
+      font-weight: bold; }
+    .menu1__plat__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
+    .menu1__plat img {
       margin: auto; }
-  .menu1__mouvementfinal {
+  .menu1__dessert {
     margin: auto;
-    font-family: 'Devonshire', cursive; }
-    .menu1__mouvementfinal img {
+    font-family: 'Kalam', cursive;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: left; }
+    .menu1__dessert__titre {
+      font-size: 40px;
+      display: flex;
+      margin-top: 50px;
+      font-weight: bold; }
+    .menu1__dessert__prix {
+      margin-right: 200px; }
+    .menu1__dessert__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
+    .menu1__dessert img {
       margin: auto; }
 
 .logo-fin {
   display: flex;
-  margin: auto; }
+  margin: auto;
+  font-size: 30px; }
 
-h3 {
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 50px; }
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+th, td {
+  padding: 30px; }
+
+a.underline {
+  position: relative;
+  text-decoration: none;
+  color: black; }
+
+a.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+a.underline:hover:before {
+  visibility: visible;
+  width: 100%; }
 
 th {
   display: flex; }
@@ -577,8 +636,7 @@ tr {
 .menu2 {
   max-width: 100%;
   margin: auto;
-  margin-bottom: 80px;
-  font-family: 'Parisienne'; }
+  margin-bottom: 80px; }
   .menu2__main {
     display: flex;
     flex-direction: column;
@@ -589,32 +647,100 @@ tr {
       font-size: 60px;
       margin: auto;
       text-align: center;
+      font-family: 'Parisienne', cursive;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
-  .menu2__appetit {
-    margin: auto;
-    color: #c67412;
-    font-family: 'Parisienne'; }
-    .menu2__appetit img {
+  .menu2__entrees {
+    color: #c67412; }
+    .menu2__entrees img {
       margin: auto; }
-  .menu2__plaisir {
-    margin: auto;
-    color: #a46498;
-    font-family: 'Parisienne'; }
-    .menu2__plaisir img {
+    .menu2__entrees__titre {
+      display: flex;
+      font-size: 40px;
+      margin-top: 20px;
+      font-weight: bold; }
+    .menu2__entrees__prix {
+      margin-right: 200px; }
+    .menu2__entrees__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
+  .menu2__plat {
+    color: #a46498; }
+    .menu2__plat img {
       margin: auto; }
-  .menu2__gourmandises {
-    margin: auto;
-    color: #6e4ccc;
-    font-family: 'Parisienne'; }
-    .menu2__gourmandises img {
+    .menu2__plat__titre {
+      font-size: 40px;
+      display: flex;
+      margin-top: 50px;
+      font-weight: bold; }
+    .menu2__plat__prix {
+      margin-right: 200px; }
+    .menu2__plat__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
+  .menu2__dessert {
+    color: #6e4ccc; }
+    .menu2__dessert img {
       margin: auto; }
+    .menu2__dessert__titre {
+      font-size: 40px;
+      display: flex;
+      margin-top: 50px;
+      font-weight: bold; }
+    .menu2__dessert__prix {
+      margin-right: 200px; }
+    .menu2__dessert__repas {
+      display: flex;
+      margin-left: 200px;
+      font-size: 30px;
+      text-align: left;
+      justify-content: space-between; }
 
-h3 {
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 50px; }
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+th, td {
+  padding: 30px; }
+
+a.underline {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-top: 25px; }
+
+a.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+a.underline:hover:before {
+  visibility: visible;
+  width: 100%; }
+
+a.underline.entrees {
+  color: #c67412; }
+
+a.underline.plat {
+  color: #a46498; }
+
+a.underline.dessert {
+  color: #6e4ccc; }
 
 th {
   display: flex; }
@@ -658,11 +784,6 @@ tr {
     font-family: 'Parisienne', cursive; }
     .menu3__terminer img {
       margin: auto; }
-
-h3 {
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 50px; }
 
 th {
   display: flex; }

@@ -1,12 +1,6 @@
 
 
-h3 {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 50px;
-    
-    
-}
+
 
 th {
     display: flex;
@@ -28,7 +22,7 @@ tr {
     max-width: 100%;
     margin: auto;
     margin-bottom: 80px;
-    font-family: 'Parisienne';
+   
     &__main {
         
         display: flex;
@@ -41,6 +35,7 @@ tr {
         font-size: 60px;
         margin: auto;
         text-align: center;
+        font-family: 'Parisienne', cursive;
         
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -50,33 +45,159 @@ tr {
     
 }
 
-    &__appetit {
+    &__entrees {
         
-        margin: auto;
+        
         color: #c67412;
-        font-family: 'Parisienne';
+        
         & img {
             
             margin: auto;
         }
 
+        
+
+        &__titre {
+            display: flex;
+            font-size: 40px;
+            margin-top: 20px;
+            font-weight: bold;
+
+        
     }
 
-    &__plaisir {
-        margin: auto;
+    &__prix {
+        margin-right: 200px;
+    }
+
+        &__repas {
+            display: flex;
+            margin-left: 200px;
+            font-size: 30px;
+            text-align: left;
+            justify-content: space-between;
+
+        }
+
+    }
+
+    &__plat{
+        
         color: #a46498;
-        font-family: 'Parisienne';
+        
         & img {
             margin: auto;
+        }
+
+        
+        &__titre {
+            font-size: 40px;
+            display: flex;
+            margin-top: 50px;
+            font-weight: bold;
+            
+            
+        }
+
+        &__prix {
+            margin-right: 200px;
+        }
+
+        &__repas {
+            display: flex;
+            margin-left: 200px;
+            font-size: 30px;
+            text-align: left;
+            justify-content: space-between;
+
         }
     }
 
-    &__gourmandises {
-        margin: auto;
+    &__dessert {
+        
         color: #6e4ccc;
-        font-family: 'Parisienne';
+        
         & img {
             margin: auto;
         }
+
+        &__titre {
+            font-size: 40px;
+            display: flex;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        &__prix {
+            margin-right: 200px;
+        }
+
+        
+
+        &__repas {
+            display: flex;
+            margin-left: 200px;
+            font-size: 30px;
+            text-align: left;
+            justify-content: space-between;
+
+        }
+
     }
 }
+
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+  th, td {
+    padding: 30px;
+  }
+
+  a.underline {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-top: 25px;
+
+  }
+    
+   a.underline:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+   }
+
+   a.underline:hover:before {
+    
+        visibility: visible;
+        width: 100%;
+      
+   }
+  
+
+   a.underline.entrees {
+    color: #c67412;
+   }
+
+
+   a.underline.plat {
+    color: #a46498;
+   }
+
+
+   a.underline.dessert {
+    color: #6e4ccc;
+   }
