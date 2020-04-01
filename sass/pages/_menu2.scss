@@ -1,40 +1,16 @@
 
 
-
-
-th {
-    display: flex;
-}
-
-td {
-    
-    font-size: 30px;
-}
-
-tr {
-    margin-bottom: 10px;
-}
-
-
-
-
 .menu2 {
     max-width: 100%;
     margin: auto;
     margin-bottom: 80px;
    
     &__main {
-        
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
+        @include menu-main;
         background-color: $color-menu2 ;
 
         &__titre {
-        font-size: 60px;
-        margin: auto;
-        text-align: center;
+        @include menu-titre;
         font-family: 'Parisienne', cursive;
         
         -webkit-background-clip: text;
@@ -71,11 +47,7 @@ tr {
     }
 
         &__repas {
-            display: flex;
-            margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
+            @include menu-repas;
 
         }
 
@@ -104,11 +76,7 @@ tr {
         }
 
         &__repas {
-            display: flex;
-            margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
+            @include menu-repas;
 
         }
     }
@@ -135,11 +103,7 @@ tr {
         
 
         &__repas {
-            display: flex;
-            margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
+            @include menu-repas;
 
         }
 
@@ -156,9 +120,6 @@ tr {
     float: right;
 }
 
-  th, td {
-    padding: 30px;
-  }
 
   a.underline {
     position: relative;

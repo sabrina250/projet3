@@ -6,6 +6,10 @@
     flex-wrap: wrap;
 
      
+
+    &__titre {
+        font-family: 'Kalam', cursive;
+    }
     
    
     &__menu1 {
@@ -23,6 +27,7 @@
             color: black;
             @include menu-a;
             @include mobile-only-acceuil;
+            
             
             
                 
@@ -60,9 +65,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
+
+            
         }
 
         
+
+           
 
         & :hover{
             @include menu-hover;
@@ -134,6 +143,7 @@
         }
     }
 }
+
 
 
 

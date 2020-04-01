@@ -14,14 +14,14 @@
 
 
 @mixin menu-img {
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
 @mixin menu-img-mobile {
  @media screen and (max-width: map-get($breakpoint, mobile )) {
      
-    width: 100%;
+    
     margin: auto;
  }
 }
@@ -30,9 +30,15 @@
     @media screen and (max-width: map-get($breakpoint, mobile )){
         width: 90%;
         margin: auto;
-        height: 400px;
-        margin-top: 30px;
+        height: 300px;
+        font-size: 35px;
         margin-bottom: 10px;
+
+        a {
+          font-size: 35px;
+        }
+
+        
     }
 }
 
@@ -69,8 +75,18 @@
         padding: 10px;
         font-size: 20px;
         height: 50px;
+        margin: auto;
 
     }
+}
+
+@mixin mobile-only-menu1-repas {
+  @media screen and (max-width: map-get($breakpoint, mobile )){
+      font-size: 30px;
+      display: contents;
+      
+
+  }
 }
 
 
@@ -97,6 +113,27 @@
     color:#fdcb46;
     font-size: 40px;
     
+}
+
+@mixin menu-main {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+}
+
+@mixin menu-titre {
+        font-size: 60px;
+        margin: auto;
+        text-align: center;
+}
+
+@mixin menu-repas {
+  display: flex;
+  margin-left: 200px;
+  font-size: 30px;
+  text-align: left;
+  justify-content: space-between;
 }
 
 
@@ -194,3 +231,6 @@
         }
       }
 }
+
+
+

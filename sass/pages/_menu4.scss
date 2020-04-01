@@ -1,39 +1,20 @@
 
 
-th {
-    display: flex;
-}
-
-td {
-    
-    font-size: 30px;
-}
-
-tr {
-    margin-bottom: 10px;
-}
-
-
 
 
 .menu4 {
     max-width: 100%;
     margin: auto;
     margin-bottom: 80px;
-    font-family: 'Kalam', cursive;
+    
     &__main {
         
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
+        @include menu-main;
         background-color: $color-menu4 ;
 
         &__titre {
-        font-size: 60px;
-        margin: auto;
-        text-align: center;
-        
+        @include menu-titre;
+        font-family: 'Kalam', cursive;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
@@ -42,9 +23,9 @@ tr {
     
 }
 
-    &__esquisse {
+    &__entrees, &__plat, &__dessert {
         
-        margin: auto;
+       
         
         font-family: 'Kalam', cursive;
         & img {
@@ -52,23 +33,62 @@ tr {
             margin: auto;
         }
 
+        &__titre {
+            display: flex;
+            font-size: 40px;
+            margin-top: 20px;
+            font-weight: bold;
+
+        
     }
 
-    &__oeuvre {
-        margin: auto;
-        
-        font-family: 'Kalam', cursive;
-        & img {
-            margin: auto;
-        }
+    &__prix {
+        margin-right: 200px;
     }
 
-    &__sommet {
-        margin: auto;
-        
-        font-family: 'Kalam', cursive;
-        & img {
-            margin: auto;
+        &__repas {
+            @include menu-repas;
+
         }
+
     }
+
+    
 }
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+  a.underline {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-top: 25px;
+
+  }
+    
+   a.underline:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+   }
+
+   a.underline:hover:before {
+    
+        visibility: visible;
+        width: 100%;
+      
+   }

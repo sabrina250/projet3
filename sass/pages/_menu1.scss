@@ -1,13 +1,4 @@
 
-
-
-
-$animate: all 0.2s ease-in-out;
-
-    
-    
-    
-
 th {
     display: flex;
 }
@@ -31,11 +22,7 @@ tr {
     font-family: 'Devonshire', cursive;
 
     &__main {
-        
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
+        @include menu-main;
         background-color: $color-menu1 ;
 
 
@@ -49,7 +36,7 @@ tr {
         }
 
         &__titre {
-            font-size: 70px;
+            font-size: 300%;
             margin: auto;
             text-align: center;
         }
@@ -63,7 +50,7 @@ tr {
 
    
 
-    &__entrees {
+    &__entrees, &__plat, &__dessert {
         
         margin: auto;
         font-family: 'Kalam', cursive;
@@ -78,99 +65,26 @@ tr {
 
         &__titre {
             display: flex;
-            font-size: 40px;
-            margin-top: 20px;
-            font-weight: bold;
-
-        
-    }
-
-        &__repas {
-            display: flex;
-            margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
-
-        }
-
-        & img {
-            
-            margin: auto;
-        }
-
-    }
-
-    &__plat {
-        margin: auto;
-        font-family: 'Kalam', cursive;
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        text-align: left;
-        
-
-        &__prix {
-            margin-right: 200px;
-        }
-
-        &__titre {
-            font-size: 40px;
-            display: flex;
+            font-size: 300%;
             margin-top: 50px;
             font-weight: bold;
-            
-            
-        }
 
-        &__repas {
-            display: flex;
-           margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
-
-        }
-
-        & img {
-            margin: auto;
-        }
-    }
-
-    &__dessert {
-        margin: auto;
         
-        font-family: 'Kalam', cursive;
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        text-align: left;
-
-        &__titre {
-            font-size: 40px;
-            display: flex;
-            margin-top: 50px;
-            font-weight: bold;
-        }
-
-
-        &__prix {
-            margin-right: 200px;
-        }
+    }
 
         &__repas {
-            display: flex;
-            margin-left: 200px;
-            font-size: 30px;
-            text-align: left;
-            justify-content: space-between;
-
+           @include menu-repas;
+            @include mobile-only-menu1-repas;
         }
 
         & img {
+            
             margin: auto;
         }
+
     }
+
+    
 
 }
 
@@ -221,6 +135,8 @@ tr {
         width: 100%;
       
    }
+
+
   
     
      
