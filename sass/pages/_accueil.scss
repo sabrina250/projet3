@@ -6,6 +6,8 @@
     flex-wrap: wrap;
 
      
+        
+     
 
     &__titre {
         font-family: 'Kalam', cursive;
@@ -22,27 +24,24 @@
             @include menu-hover;
             z-index: 1;
         }
-
+    
         & a {
             color: black;
             @include menu-a;
             @include mobile-only-acceuil;
             
-            
-            
-                
-        }
-
-
+    
+             }
+    
+    
         
-
         & img {
-
+    
             @include menu-img;
             @include menu-img-mobile;
             
         }
-
+    
         &__gras {
             font-weight: bold;
             font-family: 'lucida', sans-serif;
@@ -65,7 +64,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
-
+            @media screen and (max-width: map-get($breakpoint, mobile )){
+                margin-top: 40%;
+            }
             
         }
 
@@ -78,12 +79,10 @@
             z-index: 1;
         }
 
-        &__img {
 
-            @include menu-img;
-            @include menu-img-mobile;
-        }
     }
+
+        
 
     &__menu3 {
         
@@ -98,7 +97,9 @@
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
             font-family: 'Parisienne', cursive;
-                    
+            @media screen and (max-width: map-get($breakpoint, mobile )){
+                margin-top: 40%;
+            }
 
         }
 
@@ -107,17 +108,19 @@
             z-index: 1;
             }
 
-         &__img {
-
-        @include menu-img;     
-        @include menu-img-mobile;   
-        }
+         
             
     }
 
     &__menu4 {
         @include menu-acceuil;
         background-color: $color-menu4;
+        
+
+        & :hover{
+            @include menu-hover;
+            z-index: 1;
+            }
         
         @include mobile-only-acceuil;
         & a {
@@ -127,20 +130,17 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
-            
-            
-        }
-
-
-        & :hover{
-            @include menu-hover;
-            z-index: 1;
+            @media screen and (max-width: map-get($breakpoint, mobile )){
+                margin-top: 40%;
             }
 
-            &__img {
-                @include menu-img;
-                @include menu-img-mobile;
+            
         }
+
+
+        
+
+           
     }
 }
 

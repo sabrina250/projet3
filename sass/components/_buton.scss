@@ -19,6 +19,9 @@
         margin-right: auto;
         size: 40px;
         @include mobile-only-buton;
+        @media screen and (max-width: map-get($breakpoint, mobile )) {
+          margin-bottom: 100px;
+      }
         & a {
           @include buton-a;
           @include mobile-only-buton;
