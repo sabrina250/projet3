@@ -12,11 +12,12 @@ $colorsecondaire: #579c87;
 
 /*variables buton*/
 $num-bars: 3;
-$anim-dur: 2s;
+$anim-dur: 1.5s;
 $anim-delay: $anim-dur / $num-bars;
 
 
 /* variable mobile-only*/
 $breakpoint: (
-    mobile: 599px
+    tablette: 1204px
 );
+

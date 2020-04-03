@@ -19,7 +19,7 @@
 }
 
 @mixin menu-img-mobile {
- @media screen and (max-width: map-get($breakpoint, mobile )) {
+ @media screen and (max-width: map-get($breakpoint, tablette )) {
      
     
     margin: auto;
@@ -27,12 +27,12 @@
 }
 
 @mixin mobile-only-acceuil {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
-        height: 300px;
-        font-size: 35px;
-        margin-bottom: 10px;
+        height: 100%;
+        font-size: 200%;
+        margin-bottom: 30%;
         
 
         
@@ -40,7 +40,7 @@
 }
 
 @mixin mobile-only-base {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         max-width: 100%;
         margin: 0px;
         
@@ -49,7 +49,7 @@
 }
 
 @mixin mobile-only-header {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
         font-size: 15px;
@@ -58,7 +58,7 @@
 }
 
 @mixin mobile-only-footer {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
         font-size: 15px;
@@ -67,7 +67,7 @@
 
 
 @mixin mobile-only-buton {
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         
         padding: 2px;
         font-size: 20px;
@@ -79,18 +79,18 @@
 }
 
 @mixin mobile-only-menu1-repas {
-  @media screen and (max-width: map-get($breakpoint, mobile )){
+  @media screen and (max-width: map-get($breakpoint, tablette )){
       font-size: 20px;
-      display: contents;
+      
       
 
   }
 }
 
 @mixin mobile-only-menu2-repas {
-  @media screen and (max-width: map-get($breakpoint, mobile )){
+  @media screen and (max-width: map-get($breakpoint, tablette )){
       font-size: 20px;
-      display: contents;
+      
       
 
   }
@@ -146,10 +146,11 @@
 
 @mixin menu-repas {
   display: flex;
-  margin-left: 200px;
+  align-items: left;
   font-size: 30px;
   text-align: left;
   justify-content: space-between;
+  width: 100%;
 }
 
 
@@ -159,25 +160,25 @@
           -webkit-transform: translateY(0);
           transform: translateY(0);
         }
-        20%{
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
+        25%{
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
         }
         40%{
-          -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-        }
-        50%{
           -webkit-transform: translateY(0);
           transform: translateY(0);
+        }
+        50%{
+          -webkit-transform: translateY(-10);
+          transform: translateY(-10);
         }
         60%{
           -webkit-transform: translateY(0);
-          transform: translateY();
+          transform: translateY(0);
         }
-        80%{
-          -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+        75%{
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
         }
         100%{
           -webkit-transform: translateY(0);

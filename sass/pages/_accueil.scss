@@ -20,7 +20,7 @@
         @include mobile-only-acceuil;
         font-family: 'Devonshire', cursive;
         
-        & :hover{
+        & a:hover{
             @include menu-hover;
             z-index: 1;
         }
@@ -64,7 +64,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin-top: 40%;
             }
             
@@ -74,7 +74,7 @@
 
            
 
-        & :hover{
+        & a:hover{
             @include menu-hover;
             z-index: 1;
         }
@@ -97,13 +97,13 @@
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
             font-family: 'Parisienne', cursive;
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin-top: 40%;
             }
 
         }
 
-        & :hover{
+        & a:hover{
             @include menu-hover;
             z-index: 1;
             }
@@ -117,7 +117,7 @@
         background-color: $color-menu4;
         
 
-        & :hover{
+        & a:hover{
             @include menu-hover;
             z-index: 1;
             }
@@ -130,7 +130,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin-top: 40%;
             }
 

@@ -8,17 +8,31 @@
     margin: auto;
     margin-bottom: 80px;
     
+
+    &__left {
+        float: left;
+        margin-left: -150px;
+    }
+    
+    &__right {
+        float: right;
+        margin-right: -150px;
+    }
     &__main {
         
         @include menu-main;
         background-color: $color-menu3 ;
 
-        @media screen and (max-width: map-get($breakpoint, mobile )){
+        @media screen and (max-width: map-get($breakpoint, tablette )){
             width: 100%;
-            
-            
-    
-        }
+            }
+
+            &__texte {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                width: 70%;
+            }
 
         &__titre {
         @include menu-titre;
@@ -27,7 +41,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
-        @media screen and (max-width: map-get($breakpoint, mobile )){
+        @media screen and (max-width: map-get($breakpoint, tablette )){
             font-size: 200%;
             
             
@@ -45,8 +59,8 @@
         font-family: 'Kalam', cursive;
        
         & img {
-            margin: auto;
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 display: none;
                 
                 
@@ -54,11 +68,11 @@
             }
         }
         &__titre {
-            display: flex;
+            text-align: center;
             font-size: 40px;
             margin-top: 20px;
             font-weight: bold;
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 200%;
                 
@@ -70,7 +84,7 @@
     }
 
     &__prix {
-        margin-right: 200px;
+        
     }
 
         &__repas {
@@ -86,13 +100,7 @@
 }
 
 
-.left {
-    float: left;
-}
 
-.right {
-    float: right;
-}
 
 
 

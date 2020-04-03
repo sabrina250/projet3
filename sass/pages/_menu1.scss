@@ -12,12 +12,18 @@
     &__main {
         @include menu-main;
         background-color: $color-menu1 ;
-        @media screen and (max-width: map-get($breakpoint, mobile )){
+        @media screen and (max-width: map-get($breakpoint, tablette )){
             width: 100%;
-            
-            
-    
         }
+            
+            &__texte {
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                width: 80%;
+            }
+    
+        
 
        
 
@@ -32,7 +38,7 @@
             font-size: 300%;
             margin: auto;
             text-align: center;
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 font-size: 200%;
                 
                 
@@ -51,23 +57,22 @@
 
     &__entrees, &__plat, &__dessert {
         
-        margin: auto;
+        
         font-family: 'Kalam', cursive;
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        text-align: left;
+        
+        
         
         &__prix {
-            margin-right: 200px;
+            display: flex;
         }
 
         &__titre {
-            display: flex;
+            
             font-size: 300%;
             margin-top: 50px;
+            text-align: center;
             font-weight: bold;
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 200%;
                 
@@ -82,11 +87,12 @@
             @include mobile-only-menu1-repas;
         }
 
-        & img {
+        &img {
+            float: left;
             
-            margin: auto;
+            
 
-            @media screen and (max-width: map-get($breakpoint, mobile )){
+            @media screen and (max-width: map-get($breakpoint, tablette )){
                 display: none;
                 
                 
@@ -96,6 +102,29 @@
 
     }
 
+
+    &__left {
+        
+        float: left;
+        margin-left: -20px;
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            display: none;
+            
+            
+    
+        }
+    }
+
+    &__right {
+        float: right;
+        margin-right: -20px;
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            display: none;
+            
+            
+    
+        }
+    }
     
 
 }
@@ -107,7 +136,7 @@
     margin: auto;
     font-size: 30px;
 
-    @media screen and (max-width: map-get($breakpoint, mobile )){
+    @media screen and (max-width: map-get($breakpoint, tablette )){
         font-size: 80%;
         
         
@@ -117,13 +146,9 @@
 }
 
 
-.left {
-    float: left;
-}
 
-.right {
-    float: right;
-}
+
+
 
   th, td {
     padding: 30px;
