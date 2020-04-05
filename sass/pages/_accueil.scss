@@ -4,7 +4,13 @@
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        margin: auto;
+        
+        
+  
+        
+    }
      
         
      
@@ -17,6 +23,7 @@
     &__menu1 {
         @include menu-acceuil;
         background-color: $color-menu1;
+        @include tablette-only-menu;
         @include mobile-only-acceuil;
         font-family: 'Devonshire', cursive;
         
@@ -28,7 +35,9 @@
         & a {
             color: black;
             @include menu-a;
-            @include mobile-only-acceuil;
+            @include tablette-only-acceuil;
+            
+            @include mobile-only-menu;
             
     
              }
@@ -58,15 +67,17 @@
         @include menu-acceuil;
         background-color: $color-menu2;
         @include mobile-only-acceuil;
+        @include tablette-only-menu;
+        
         & a {
-            @include mobile-only-acceuil;
+            @include tablette-only-acceuil;
+            
+            @include mobile-only-menu;
             @include menu-a;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
-            @media screen and (max-width: map-get($breakpoint, tablette )){
-                margin-top: 40%;
-            }
+           
             
         }
 
@@ -86,20 +97,20 @@
 
     &__menu3 {
         
-        
+        @include tablette-only-menu;
+        @include mobile-only-acceuil;
         background-color: $color-menu3 ;
         @include menu-acceuil;
-        @include mobile-only-acceuil;
+        
         & a {
             @include menu-a;
-            @include mobile-only-acceuil;
+            @include mobile-only-menu;
+            @include tablette-only-acceuil;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
             font-family: 'Parisienne', cursive;
-            @media screen and (max-width: map-get($breakpoint, tablette )){
-                margin-top: 40%;
-            }
+            
 
         }
 
@@ -115,24 +126,24 @@
     &__menu4 {
         @include menu-acceuil;
         background-color: $color-menu4;
-        
+        @include tablette-only-menu;
+        @include mobile-only-acceuil;
 
         & a:hover{
             @include menu-hover;
             z-index: 1;
             }
         
-        @include mobile-only-acceuil;
+        
         & a {
-            @include mobile-only-acceuil;
+            @include tablette-only-acceuil;
+            @include mobile-only-menu;
             @include menu-a;
             font-family: 'Kalam', cursive;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
-            @media screen and (max-width: map-get($breakpoint, tablette )){
-                margin-top: 40%;
-            }
+            
 
             
         }

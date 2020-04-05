@@ -14,6 +14,7 @@
         background-color: $color-menu1 ;
         @media screen and (max-width: map-get($breakpoint, tablette )){
             width: 100%;
+            margin: auto;
         }
             
             &__texte {
@@ -39,7 +40,7 @@
             margin: auto;
             text-align: center;
             @media screen and (max-width: map-get($breakpoint, tablette )){
-                font-size: 200%;
+                font-size: 40px;
                 
                 
         
@@ -60,10 +61,11 @@
         
         font-family: 'Kalam', cursive;
         
-        
+       
         
         &__prix {
             display: flex;
+            @include mobile-only-menu1-repas;
         }
 
         &__titre {
@@ -74,7 +76,7 @@
             font-weight: bold;
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
-                font-size: 200%;
+                font-size: 25px;
                 
                 
         
@@ -84,6 +86,7 @@
 
         &__repas {
            @include menu-repas;
+            @include tablette-only-menu1-repas;
             @include mobile-only-menu1-repas;
         }
 

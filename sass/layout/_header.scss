@@ -11,7 +11,7 @@
     color: #fdcb46;
     width: 100%;
     margin: auto;
-    @include mobile-only-header;
+    @include tablette-only-header;
     
     & a {
         text-decoration: none;

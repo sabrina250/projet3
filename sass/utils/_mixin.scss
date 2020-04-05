@@ -21,25 +21,71 @@
 @mixin menu-img-mobile {
  @media screen and (max-width: map-get($breakpoint, tablette )) {
      
-    
+    width: 10%;
     margin: auto;
  }
 }
 
-@mixin mobile-only-acceuil {
+@mixin tablette-only-acceuil {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
-        height: 100%;
+        height: 200px;
         font-size: 200%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
+        margin-top: 10%;
         
 
         
     }
 }
 
-@mixin mobile-only-base {
+@mixin mobile-only-acceuil {
+  @media screen and (max-width: map-get($mobilepoint, mobile )){
+      width: 100%;
+      margin: auto;
+      height: 200px;
+      font-size: 30px;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      
+
+      
+  }
+}
+
+@mixin mobile-only-menu {
+  @media screen and (max-width: map-get($mobilepoint, mobile )){
+      width: 100%;
+      margin: auto;
+      height: 200px;
+      font-size: 30px;
+      
+      
+
+      
+  }
+}
+
+
+
+@mixin tablette-only-menu {
+  @media screen and (max-width: map-get($breakpoint, tablette )){
+      width: 100%;
+      margin: auto;
+      height: 100%;
+      font-size: 200%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      
+      
+
+      
+  }
+}
+
+
+@mixin tablette-only-base {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         max-width: 100%;
         margin: 0px;
@@ -48,7 +94,7 @@
     }
 }
 
-@mixin mobile-only-header {
+@mixin tablette-only-header {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
@@ -57,7 +103,7 @@
     }
 }
 
-@mixin mobile-only-footer {
+@mixin tablette-only-footer {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
@@ -66,7 +112,7 @@
 }
 
 
-@mixin mobile-only-buton {
+@mixin tablette-only-buton {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         
         padding: 2px;
@@ -78,18 +124,28 @@
     }
 }
 
-@mixin mobile-only-menu1-repas {
+@mixin tablette-only-menu1-repas {
   @media screen and (max-width: map-get($breakpoint, tablette )){
-      font-size: 20px;
+      font-size: 15px;
       
       
 
   }
 }
 
-@mixin mobile-only-menu2-repas {
+@mixin mobile-only-menu1-repas {
+  @media screen and (max-width: map-get($mobilepoint, mobile )){
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      
+ }
+}
+
+@mixin tablette-only-menu2-repas {
   @media screen and (max-width: map-get($breakpoint, tablette )){
-      font-size: 20px;
+      font-size: 15px;
       
       
 

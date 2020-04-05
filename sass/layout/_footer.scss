@@ -7,6 +7,6 @@
     width: 100%;
     margin: auto;
     z-index: 2;
-    @include mobile-only-footer;
+    @include tablette-only-footer;
 }
 

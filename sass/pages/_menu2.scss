@@ -22,6 +22,7 @@
 
         @media screen and (max-width: map-get($breakpoint, tablette )){
             width: 100%;
+            margin: auto;
             }
 
             &__texte {
@@ -40,7 +41,7 @@
         background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
 
         @media screen and (max-width: map-get($breakpoint, tablette )){
-            font-size: 200%;
+            font-size: 40px;
             
             
     
@@ -78,7 +79,8 @@
 
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
-                font-size: 200%;
+                font-size: 25px;
+                margin-top: 10px;
                 
                 
         
@@ -87,12 +89,14 @@
     }
 
     &__prix {
+        @include mobile-only-menu1-repas;
         
     }
 
         &__repas {
             @include menu-repas;
-            @include mobile-only-menu2-repas;
+            @include tablette-only-menu2-repas;
+            @include mobile-only-menu1-repas;
 
         }
 
@@ -121,7 +125,8 @@
             
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
-                font-size: 200%;
+                font-size: 25px;
+                margin-top: 10px;
                 
         
             }
@@ -129,12 +134,14 @@
         }
 
         &__prix {
+            @include mobile-only-menu1-repas;
             
         }
 
         &__repas {
             @include menu-repas;
-            @include mobile-only-menu2-repas;
+            @include tablette-only-menu2-repas;
+            @include mobile-only-menu1-repas;
 
         }
     }
@@ -161,7 +168,8 @@
 
             @media screen and (max-width: map-get($breakpoint, tablette)){
                 margin: auto;
-                font-size: 200%;
+                font-size: 25px;
+                margin-top: 10px;
                 
         
             }
@@ -169,6 +177,7 @@
         }
 
         &__prix {
+            @include mobile-only-menu1-repas;
             
         }
 
@@ -176,7 +185,8 @@
 
         &__repas {
             @include menu-repas;
-            @include mobile-only-menu2-repas;
+            @include tablette-only-menu2-repas;
+            @include mobile-only-menu1-repas;
 
         }
 

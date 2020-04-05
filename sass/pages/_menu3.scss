@@ -74,7 +74,7 @@
             font-weight: bold;
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
-                font-size: 200%;
+                font-size: 20px;
                 
                 
         
@@ -84,12 +84,14 @@
     }
 
     &__prix {
+        @include mobile-only-menu1-repas;
         
     }
 
         &__repas {
             @include menu-repas;
-            @include mobile-only-menu2-repas;
+            @include tablette-only-menu2-repas;
+            @include mobile-only-menu1-repas;
 
         }
 

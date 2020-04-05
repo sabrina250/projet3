@@ -18,19 +18,19 @@
         margin-left: auto;
         margin-right: auto;
         size: 40px;
-        @include mobile-only-buton;
+        @include tablette-only-buton;
         @media screen and (max-width: map-get($breakpoint, tablette )) {
           margin-bottom: 100px;
       }
         & a {
           @include buton-a;
-          @include mobile-only-buton;
+          @include tablette-only-buton;
         }
 
         .fa-circle  {
           @include points-prochainement;
           animation-name: points-prochainement;
-
+          
           @for $i from 1 through $num-bars {
             &--#{$i} {
               animation-delay: $anim-delay * $i;
@@ -50,6 +50,12 @@
             animation-direction: normal;
             animation-name: points;
             animation-duration: $anim-dur;
+            @media screen and (max-width: map-get($breakpoint, tablette )) {
+     
+              font-size: 1em;
+              width: 5px;
+              height: 5px;
+           }
             }
           }
             
@@ -68,7 +74,7 @@
         background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include mobile-only-buton;
+      @include tablette-only-buton;
         & :hover {
             @include wiggle;
             animation-name: angry-animation;
@@ -82,7 +88,7 @@
         & a {
             @include buton-a;
             margin-top: 5%;
-          @include mobile-only-buton;
+          @include tablette-only-buton;
            
         
         }
@@ -97,7 +103,7 @@
         background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include mobile-only-buton;
+      @include tablette-only-buton;
 
         & :hover {
             @include wiggle;
@@ -113,7 +119,7 @@
         & a {
           @include buton-a;
           margin-top: 5%;
-          @include mobile-only-buton;
+          @include tablette-only-buton;
         
         }
     }
