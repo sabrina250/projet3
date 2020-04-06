@@ -1,6 +1,6 @@
 
 .menu {
-    width: 80%;
+    width: 60%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@
             @include menu-a;
             @include tablette-only-acceuil;
             
-            @include mobile-only-menu;
+            @include mobile-only-acceuil;
             
     
              }
@@ -47,6 +47,7 @@
         & img {
     
             @include menu-img;
+            @include menu-img-tablette;
             @include menu-img-mobile;
             
         }
@@ -66,13 +67,14 @@
     &__menu2 {
         @include menu-acceuil;
         background-color: $color-menu2;
-        @include mobile-only-acceuil;
         @include tablette-only-menu;
+        @include mobile-only-acceuil;
+        
         
         & a {
             @include tablette-only-acceuil;
+            @include mobile-only-acceuil;
             
-            @include mobile-only-menu;
             @include menu-a;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -104,8 +106,9 @@
         
         & a {
             @include menu-a;
-            @include mobile-only-menu;
+            
             @include tablette-only-acceuil;
+            @include mobile-only-acceuil;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
@@ -137,7 +140,7 @@
         
         & a {
             @include tablette-only-acceuil;
-            @include mobile-only-menu;
+            @include mobile-only-acceuil;
             @include menu-a;
             font-family: 'Kalam', cursive;
             -webkit-background-clip: text;

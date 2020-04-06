@@ -69,7 +69,7 @@
         }
         &__titre {
             text-align: center;
-            font-size: 40px;
+            font-size: 200%;
             margin-top: 20px;
             font-weight: bold;
             @media screen and (max-width: map-get($breakpoint, tablette )){

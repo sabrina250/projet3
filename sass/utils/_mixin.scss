@@ -2,7 +2,7 @@
         text-align: center;
         display: flex;
         margin-top: 100px;
-        height: 900px;
+        height: 600px;
         box-shadow: 2px 4px 23px 5px rgba(0,0,0,0.33);
         width: 40%;
         margin-left:90px ;
@@ -18,13 +18,25 @@
     margin: auto;
 }
 
-@mixin menu-img-mobile {
+@mixin menu-img-tablette {
  @media screen and (max-width: map-get($breakpoint, tablette )) {
      
-    width: 10%;
+    width: 17%;
     margin: auto;
+    margin-top: -15px;
  }
 }
+
+@mixin menu-img-mobile {
+  @media screen and (max-width: map-get($mobilepoint, mobile )) {
+      
+     width: 17%;
+     margin: auto;
+     margin-bottom: 10px;
+    margin-top: -15px;
+     
+  }
+ }
 
 @mixin tablette-only-acceuil {
     @media screen and (max-width: map-get($breakpoint, tablette )){
@@ -44,7 +56,7 @@
   @media screen and (max-width: map-get($mobilepoint, mobile )){
       width: 100%;
       margin: auto;
-      height: 200px;
+      height: 150px;
       font-size: 30px;
       margin-top: 10%;
       margin-bottom: 10%;
@@ -58,7 +70,8 @@
   @media screen and (max-width: map-get($mobilepoint, mobile )){
       width: 100%;
       margin: auto;
-      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       font-size: 30px;
       
       
@@ -74,7 +87,7 @@
       width: 100%;
       margin: auto;
       height: 100%;
-      font-size: 200%;
+      font-size: 150%;
       margin-top: 10%;
       margin-bottom: 10%;
       
@@ -112,11 +125,11 @@
 }
 
 
-@mixin tablette-only-buton {
+@mixin tablette-only-button {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         
         padding: 2px;
-        font-size: 20px;
+        font-size: 15px;
         height: 50px;
         margin: auto;
         padding-top: 15px;
@@ -175,15 +188,19 @@
     flex-direction: column;
     margin: auto;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 40px;
+    
 
 }
 
 
-@mixin buton-a {
+@mixin button-a {
     text-decoration: none;
     color:#fdcb46;
-    font-size: 40px;
+    font: 25px Arial;
+    display: inline;
+    margin: auto;
+    vertical-align: middle;
     
 }
 
@@ -191,11 +208,11 @@
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: 80%;
+        width: 60%;
 }
 
 @mixin menu-titre {
-        font-size: 60px;
+        font-size: 200%;
         margin: auto;
         text-align: center;
 }
@@ -203,7 +220,7 @@
 @mixin menu-repas {
   display: flex;
   align-items: left;
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
   justify-content: space-between;
   width: 100%;

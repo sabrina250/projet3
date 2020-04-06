@@ -5,26 +5,30 @@
 .btn {
     display: flex;
     margin: auto;
+    vertical-align: middle;
     
 
     &__prochainement {
         border:none;
-        padding:20px 200px 20px 200px;
+        display: flex;
         border-radius:8px;
         background: $colorsecondaire;
-        font: 13px Arial;
+        text-align: center;
         margin-bottom: 150px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        size: 40px;
-        @include tablette-only-buton;
+        height: 50px;
+        width: 25%;
+        @include tablette-only-button;
         @media screen and (max-width: map-get($breakpoint, tablette )) {
           margin-bottom: 100px;
+          width: 50%;
+          padding-top: 1px;
       }
         & a {
-          @include buton-a;
-          @include tablette-only-buton;
+          @include button-a;
+          @include tablette-only-button;
         }
 
         .fa-circle  {
@@ -36,14 +40,14 @@
               animation-delay: $anim-delay * $i;
               display: inline-block;
             color: #fdcb46;
-            width: 10px;
-            height: 10px;
-            font-size: 3em;
+            width: 7px;
+            height: 7px;
+            
             background-color: #fdcb46;
             margin-bottom: 1px;
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            
+            margin-left: 5px;
+            
             border-radius: 50%;
             animation-timing-function: ease-out;
             animation-iteration-count: infinite;
@@ -55,7 +59,17 @@
               font-size: 1em;
               width: 5px;
               height: 5px;
+              
            }
+
+           @media screen and (max-width: map-get($mobilepoint, mobile )) {
+     
+            font-size: 1em;
+            width: 5px;
+            height: 5px;
+            margin-left: 5px;
+            
+         }
             }
           }
             
@@ -69,12 +83,12 @@
 
     &__mentions {
         margin: auto;
-        margin-right: 600px;
+        vertical-align: middle;
         border-radius:8px;
         background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include tablette-only-buton;
+      @include tablette-only-button;
         & :hover {
             @include wiggle;
             animation-name: angry-animation;
@@ -86,9 +100,9 @@
         }
         
         & a {
-            @include buton-a;
+            @include button-a;
             margin-top: 5%;
-          @include tablette-only-buton;
+          @include tablette-only-button;
            
         
         }
@@ -103,7 +117,8 @@
         background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
-      @include tablette-only-buton;
+        vertical-align: middle;
+      @include tablette-only-button;
 
         & :hover {
             @include wiggle;
@@ -117,9 +132,9 @@
         }
         
         & a {
-          @include buton-a;
+          @include button-a;
           margin-top: 5%;
-          @include tablette-only-buton;
+          @include tablette-only-button;
         
         }
     }
