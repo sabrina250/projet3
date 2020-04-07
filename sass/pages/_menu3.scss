@@ -10,13 +10,25 @@
     
 
     &__left {
-        float: left;
-        margin-left: -150px;
+        display: flex;
+        margin: auto;
+        text-align: left;
+        margin-left: -100px;
+        margin-top: -10px;
+        
+        
+       
     }
     
     &__right {
-        float: right;
-        margin-right: -150px;
+        display: flex;
+        margin: auto;
+        text-align: right;
+        margin-right: -100px;
+        margin-top: -5px;
+       
+        
+        
     }
     &__main {
         
@@ -58,6 +70,12 @@
         
         font-family: 'Kalam', cursive;
        
+
+        & a.underline {
+            position: relative;
+            text-decoration: none;
+            color: black;
+        }
         & img {
             
             @media screen and (max-width: map-get($breakpoint, tablette )){
@@ -68,13 +86,26 @@
             }
         }
         &__titre {
+            display: flex;
             text-align: center;
-            font-size: 200%;
-            margin-top: 20px;
+            font-size: 150%;
+            margin-top: 80px;
+            
             font-weight: bold;
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 20px;
+                margin-top: 30px;
+                display: block;
+                
+        
+            }
+
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
                 
                 
         
@@ -106,13 +137,7 @@
 
 
 
-  a.underline {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    padding-top: 25px;
-
-  }
+  
     
    a.underline:before {
     content: "";

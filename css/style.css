@@ -2,22 +2,6 @@
 /*variables couleur header-footer-boton*/
 /*variables buton*/
 /* variable mobile-only*/
-/*@font-face {
-    font-family: "Bargain_Demo";
-    src: url('Bargain-Demo.ttf');
-}
-
-@font-face {
-    font-family:"I Love Glitter" ;
-    src: url('ILoveGlitter-OTF.ttf');
-
-}
-
-@font-face {
-    font-family: "Shadows Into Light";
-    src: url('ShadowsIntoLight.ttf');
-}*/
-/*@include font-face ("I Love Glitter", font-files("./font/ILoveGlitter-OTF.otf", "./font/ILoveGlitter-OTF.ttf" ));*/
 .container {
   max-width: 100%;
   margin: auto; }
@@ -54,7 +38,7 @@
         font-size: 150%;
         margin-top: 10%;
         margin-bottom: 10%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 630px) {
       .menu__menu1 {
         width: 100%;
         margin: auto;
@@ -89,7 +73,7 @@
           font-size: 200%;
           margin-bottom: 10%;
           margin-top: 10%; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu__menu1 a {
           width: 100%;
           margin: auto;
@@ -105,7 +89,7 @@
           width: 17%;
           margin: auto;
           margin-top: -15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu__menu1 img {
           width: 17%;
           margin: auto;
@@ -131,7 +115,7 @@
         font-size: 150%;
         margin-top: 10%;
         margin-bottom: 10%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 630px) {
       .menu__menu2 {
         width: 100%;
         margin: auto;
@@ -156,7 +140,7 @@
           font-size: 200%;
           margin-bottom: 10%;
           margin-top: 10%; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu__menu2 a {
           width: 100%;
           margin: auto;
@@ -193,7 +177,7 @@
         font-size: 150%;
         margin-top: 10%;
         margin-bottom: 10%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 630px) {
       .menu__menu3 {
         width: 100%;
         margin: auto;
@@ -219,7 +203,7 @@
           font-size: 200%;
           margin-bottom: 10%;
           margin-top: 10%; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu__menu3 a {
           width: 100%;
           margin: auto;
@@ -256,7 +240,7 @@
         font-size: 150%;
         margin-top: 10%;
         margin-bottom: 10%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 630px) {
       .menu__menu4 {
         width: 100%;
         margin: auto;
@@ -294,7 +278,7 @@
           font-size: 200%;
           margin-bottom: 10%;
           margin-top: 10%; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu__menu4 a {
           width: 100%;
           margin: auto;
@@ -423,7 +407,7 @@
             font-size: 1em;
             width: 5px;
             height: 5px; } }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 630px) {
           .btn__prochainement .fa-circle--1 {
             font-size: 1em;
             width: 5px;
@@ -449,7 +433,7 @@
             font-size: 1em;
             width: 5px;
             height: 5px; } }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 630px) {
           .btn__prochainement .fa-circle--2 {
             font-size: 1em;
             width: 5px;
@@ -475,7 +459,7 @@
             font-size: 1em;
             width: 5px;
             height: 5px; } }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 630px) {
           .btn__prochainement .fa-circle--3 {
             font-size: 1em;
             width: 5px;
@@ -674,12 +658,12 @@
       text-align: center; }
       @media screen and (max-width: 1204px) {
         .menu1__main__titre {
-          font-size: 40px; } }
+          font-size: 200%; } }
   .menu1__entrees, .menu1__plat, .menu1__dessert {
     font-family: 'Kalam', cursive; }
     .menu1__entrees__prix, .menu1__plat__prix, .menu1__dessert__prix {
       display: flex; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu1__entrees__prix, .menu1__plat__prix, .menu1__dessert__prix {
           display: flex;
           flex-direction: column;
@@ -687,13 +671,19 @@
           margin: auto; } }
     .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
       font-size: 200%;
-      margin-top: 50px;
+      margin-top: 80px;
       text-align: center;
       font-weight: bold; }
       @media screen and (max-width: 1204px) {
         .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
           margin: auto;
-          font-size: 25px; } }
+          font-size: 25px;
+          margin-top: 30px; } }
+      @media screen and (max-width: 630px) {
+        .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px; } }
     .menu1__entrees__repas, .menu1__plat__repas, .menu1__dessert__repas {
       display: flex;
       align-items: left;
@@ -704,7 +694,7 @@
       @media screen and (max-width: 1204px) {
         .menu1__entrees__repas, .menu1__plat__repas, .menu1__dessert__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu1__entrees__repas, .menu1__plat__repas, .menu1__dessert__repas {
           display: flex;
           flex-direction: column;
@@ -764,11 +754,17 @@ a.underline:hover:before {
   margin: auto;
   margin-bottom: 80px; }
   .menu2__left {
-    float: left;
-    margin-left: -100px; }
+    display: flex;
+    margin: auto;
+    text-align: left;
+    margin-left: -100px;
+    margin-top: -10px; }
   .menu2__right {
-    float: right;
-    margin-right: -100px; }
+    display: flex;
+    margin: auto;
+    text-align: right;
+    margin-right: -100px;
+    margin-top: -10px; }
   .menu2__main {
     display: flex;
     flex-direction: column;
@@ -783,7 +779,7 @@ a.underline:hover:before {
       display: flex;
       flex-direction: column;
       margin: auto;
-      width: 80%; }
+      width: 70%; }
     .menu2__main__titre {
       font-size: 200%;
       margin: auto;
@@ -794,23 +790,31 @@ a.underline:hover:before {
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
       @media screen and (max-width: 1204px) {
         .menu2__main__titre {
-          font-size: 40px; } }
+          font-size: 200%; } }
   .menu2__entrees {
     color: #c67412; }
     @media screen and (max-width: 1204px) {
       .menu2__entrees img {
         display: none; } }
     .menu2__entrees__titre {
-      font-size: 200%;
-      margin-top: 20px;
+      display: flex;
+      font-size: 150%;
+      margin-top: 80px;
       font-weight: bold;
       text-align: center; }
       @media screen and (max-width: 1204px) {
         .menu2__entrees__titre {
           margin: auto;
           font-size: 25px;
-          margin-top: 10px; } }
-    @media screen and (max-width: 500px) {
+          margin-top: 30px;
+          display: block; } }
+      @media screen and (max-width: 630px) {
+        .menu2__entrees__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px;
+          display: block; } }
+    @media screen and (max-width: 630px) {
       .menu2__entrees__prix {
         display: flex;
         flex-direction: column;
@@ -826,7 +830,7 @@ a.underline:hover:before {
       @media screen and (max-width: 1204px) {
         .menu2__entrees__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu2__entrees__repas {
           display: flex;
           flex-direction: column;
@@ -838,16 +842,24 @@ a.underline:hover:before {
       .menu2__plat img {
         display: none; } }
     .menu2__plat__titre {
-      font-size: 200%;
+      display: flex;
+      font-size: 150%;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 80px;
       font-weight: bold; }
       @media screen and (max-width: 1204px) {
         .menu2__plat__titre {
           margin: auto;
           font-size: 25px;
-          margin-top: 10px; } }
-    @media screen and (max-width: 500px) {
+          margin-top: 30px;
+          display: block; } }
+      @media screen and (max-width: 630px) {
+        .menu2__plat__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px;
+          display: block; } }
+    @media screen and (max-width: 630px) {
       .menu2__plat__prix {
         display: flex;
         flex-direction: column;
@@ -863,7 +875,7 @@ a.underline:hover:before {
       @media screen and (max-width: 1204px) {
         .menu2__plat__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu2__plat__repas {
           display: flex;
           flex-direction: column;
@@ -875,16 +887,24 @@ a.underline:hover:before {
       .menu2__dessert img {
         display: none; } }
     .menu2__dessert__titre {
-      font-size: 200%;
+      display: flex;
+      font-size: 150%;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 80px;
       font-weight: bold; }
       @media screen and (max-width: 1204px) {
         .menu2__dessert__titre {
           margin: auto;
           font-size: 25px;
-          margin-top: 10px; } }
-    @media screen and (max-width: 500px) {
+          margin-top: 30px;
+          display: block; } }
+      @media screen and (max-width: 630px) {
+        .menu2__dessert__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px;
+          display: block; } }
+    @media screen and (max-width: 630px) {
       .menu2__dessert__prix {
         display: flex;
         flex-direction: column;
@@ -900,7 +920,7 @@ a.underline:hover:before {
       @media screen and (max-width: 1204px) {
         .menu2__dessert__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu2__dessert__repas {
           display: flex;
           flex-direction: column;
@@ -910,8 +930,7 @@ a.underline:hover:before {
 a.underline {
   position: relative;
   text-decoration: none;
-  color: black;
-  padding-top: 25px; }
+  color: black; }
 
 a.underline:before {
   content: "";
@@ -942,11 +961,17 @@ a.underline.dessert {
   margin: auto;
   margin-bottom: 80px; }
   .menu3__left {
-    float: left;
-    margin-left: -150px; }
+    display: flex;
+    margin: auto;
+    text-align: left;
+    margin-left: -100px;
+    margin-top: -10px; }
   .menu3__right {
-    float: right;
-    margin-right: -150px; }
+    display: flex;
+    margin: auto;
+    text-align: right;
+    margin-right: -100px;
+    margin-top: -5px; }
   .menu3__main {
     display: flex;
     flex-direction: column;
@@ -974,19 +999,32 @@ a.underline.dessert {
           font-size: 200%; } }
   .menu3__entrees, .menu3__plat, .menu3__dessert {
     font-family: 'Kalam', cursive; }
+    .menu3__entrees a.underline, .menu3__plat a.underline, .menu3__dessert a.underline {
+      position: relative;
+      text-decoration: none;
+      color: black; }
     @media screen and (max-width: 1204px) {
       .menu3__entrees img, .menu3__plat img, .menu3__dessert img {
         display: none; } }
     .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
+      display: flex;
       text-align: center;
-      font-size: 200%;
-      margin-top: 20px;
+      font-size: 150%;
+      margin-top: 80px;
       font-weight: bold; }
       @media screen and (max-width: 1204px) {
         .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
           margin: auto;
-          font-size: 20px; } }
-    @media screen and (max-width: 500px) {
+          font-size: 20px;
+          margin-top: 30px;
+          display: block; } }
+      @media screen and (max-width: 630px) {
+        .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px;
+          display: block; } }
+    @media screen and (max-width: 630px) {
       .menu3__entrees__prix, .menu3__plat__prix, .menu3__dessert__prix {
         display: flex;
         flex-direction: column;
@@ -1002,18 +1040,12 @@ a.underline.dessert {
       @media screen and (max-width: 1204px) {
         .menu3__entrees__repas, .menu3__plat__repas, .menu3__dessert__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu3__entrees__repas, .menu3__plat__repas, .menu3__dessert__repas {
           display: flex;
           flex-direction: column;
           text-align: center;
           margin: auto; } }
-
-a.underline {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  padding-top: 25px; }
 
 a.underline:before {
   content: "";
@@ -1074,13 +1106,19 @@ a.underline:hover:before {
     .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
       text-align: center;
       font-size: 190%;
-      margin-top: 20px;
+      margin-top: 80px;
       font-weight: bold; }
       @media screen and (max-width: 1204px) {
         .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
           margin: auto;
-          font-size: 30px; } }
-    @media screen and (max-width: 500px) {
+          font-size: 30px;
+          margin-top: 30px; } }
+      @media screen and (max-width: 630px) {
+        .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
+          margin: auto;
+          font-size: 20px;
+          margin-top: 30px; } }
+    @media screen and (max-width: 630px) {
       .menu4__entrees__prix, .menu4__plat__prix, .menu4__dessert__prix {
         display: flex;
         flex-direction: column;
@@ -1096,7 +1134,7 @@ a.underline:hover:before {
       @media screen and (max-width: 1204px) {
         .menu4__entrees__repas, .menu4__plat__repas, .menu4__dessert__repas {
           font-size: 15px; } }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 630px) {
         .menu4__entrees__repas, .menu4__plat__repas, .menu4__dessert__repas {
           display: flex;
           flex-direction: column;
@@ -1106,8 +1144,7 @@ a.underline:hover:before {
 a.underline {
   position: relative;
   text-decoration: none;
-  color: black;
-  padding-top: 25px; }
+  color: black; }
 
 a.underline:before {
   content: "";
@@ -1125,7 +1162,7 @@ a.underline:hover:before {
   width: 100%; }
 
 .mentions {
-  width: 80%;
+  width: 70%;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -1133,5 +1170,33 @@ a.underline:hover:before {
   text-align: justify;
   font-size: 30px;
   margin-bottom: 100px; }
+  .mentions__texte {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .mentions__editeur {
+    text-align: justify; }
+    .mentions__editeur__titre {
+      font-size: 35px; }
+  .mentions__conditions {
+    margin-top: 20px; }
+    .mentions__conditions__titre {
+      font-size: 35px;
+      text-align: justify; }
+  .mentions__services {
+    margin-top: 20px; }
+    .mentions__services__titre {
+      font-size: 35px;
+      text-align: justify; }
+  .mentions__propriete {
+    margin-top: 20px; }
+    .mentions__propriete__titre {
+      font-size: 35px;
+      text-align: justify; }
+
+h2 {
+  text-align: center;
+  font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */

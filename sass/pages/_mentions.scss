@@ -1,6 +1,6 @@
 
 .mentions {
-    width: 80%;
+    width: 70%;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -8,4 +8,52 @@
     text-align: justify;
     font-size: 30px;
     margin-bottom: 100px;
+
+    &__texte {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__editeur {
+
+        text-align: justify;
+        &__titre {
+            font-size: 35px;
+        }
+    }
+
+    &__conditions {
+
+            margin-top: 20px;
+        &__titre {
+            font-size: 35px;
+            text-align: justify;
+        }
+    }
+
+    &__services {
+           margin-top: 20px;
+
+        &__titre {
+            font-size: 35px;
+            text-align: justify;
+        }
+    }
+
+    &__propriete {
+          margin-top: 20px;
+
+        &__titre {
+            font-size: 35px;
+            text-align: justify;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+
 }

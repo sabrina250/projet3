@@ -69,11 +69,21 @@
         &__titre {
             text-align: center;
             font-size: 190%;
-            margin-top: 20px;
+            margin-top: 80px;
             font-weight: bold;
             @media screen and (max-width: map-get($breakpoint, tablette)){
                 margin: auto;
                 font-size: 30px;
+                margin-top: 30px;
+                
+                
+        
+            }
+
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
                 
                 
         
@@ -107,7 +117,7 @@
     position: relative;
     text-decoration: none;
     color: black;
-    padding-top: 25px;
+    
 
   }
     

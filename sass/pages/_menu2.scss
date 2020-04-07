@@ -7,13 +7,25 @@
 
 
     &__left {
-        float: left;
+        display: flex;
+        margin: auto;
+        text-align: left;
         margin-left: -100px;
+        margin-top: -10px;
+        
+
+        
+        
     }
 
     &__right {
-        float: right;
+        display: flex;
+        margin: auto;
+        text-align: right;
         margin-right: -100px;
+        margin-top: -10px;
+        
+        
     }
    
     &__main {
@@ -29,7 +41,7 @@
                 display: flex;
                 flex-direction: column;
                 margin: auto;
-                width: 80%;
+                width: 70%;
             }
 
         &__titre {
@@ -41,7 +53,7 @@
         background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
 
         @media screen and (max-width: map-get($breakpoint, tablette )){
-            font-size: 40px;
+            font-size: 200%;
             
             
     
@@ -71,16 +83,26 @@
         
 
         &__titre {
-            
-            font-size: 200%;
-            margin-top: 20px;
+            display: flex;
+            font-size: 150%;
+            margin-top: 80px;
             font-weight: bold;
             text-align: center;
 
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 25px;
-                margin-top: 10px;
+                margin-top: 30px;
+                display: block;
+                
+                
+        
+            }
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
                 
                 
         
@@ -118,15 +140,26 @@
 
         
         &__titre {
-            font-size: 200%;
+            display: flex;
+            font-size: 150%;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 80px;
             font-weight: bold;
             
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 25px;
-                margin-top: 10px;
+                margin-top: 30px;
+                display: block;
+                
+        
+            }
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
+                
                 
         
             }
@@ -161,15 +194,26 @@
         }
 
         &__titre {
-            font-size: 200%;
+            display: flex;
+            font-size: 150%;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 80px;
             font-weight: bold;
 
             @media screen and (max-width: map-get($breakpoint, tablette)){
                 margin: auto;
                 font-size: 25px;
-                margin-top: 10px;
+                margin-top: 30px;
+                display: block;
+                
+        
+            }
+            @media screen and (max-width: map-get($mobilepoint, mobile)){
+                margin: auto;
+                font-size: 20px;
+                margin-top: 30px;
+                display: block;
+                
                 
         
             }
@@ -204,7 +248,7 @@
     position: relative;
     text-decoration: none;
     color: black;
-    padding-top: 25px;
+    
 
   }
     
