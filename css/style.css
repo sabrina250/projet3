@@ -5,7 +5,7 @@
 .container {
   max-width: 100%;
   margin: auto; }
-  @media screen and (max-width: 1204px) {
+  @media screen and (max-width: 1024px) {
     .container {
       max-width: 100%;
       margin: 0px; } }
@@ -15,7 +15,7 @@
   display: flex;
   margin: auto;
   flex-wrap: wrap; }
-  @media screen and (max-width: 1204px) {
+  @media screen and (max-width: 1024px) {
     .menu {
       margin: auto; } }
   .menu__titre {
@@ -23,14 +23,14 @@
   .menu__menu1 {
     text-align: center;
     display: flex;
+    margin: auto;
     margin-top: 100px;
     height: 600px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
     width: 40%;
-    margin-left: 90px;
     background-color: #fcdfdb;
     font-family: 'Devonshire', cursive; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu__menu1 {
         width: 100%;
         margin: auto;
@@ -65,7 +65,7 @@
       margin: auto;
       text-decoration: none;
       font-size: 40px; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu__menu1 a {
           width: 100%;
           margin: auto;
@@ -84,7 +84,7 @@
     .menu__menu1 img {
       width: 50%;
       margin: auto; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu__menu1 img {
           width: 17%;
           margin: auto;
@@ -101,13 +101,13 @@
   .menu__menu2 {
     text-align: center;
     display: flex;
+    margin: auto;
     margin-top: 100px;
     height: 600px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
     width: 40%;
-    margin-left: 90px;
     background-color: #fff5fe; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu__menu2 {
         width: 100%;
         margin: auto;
@@ -132,7 +132,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu__menu2 a {
           width: 100%;
           margin: auto;
@@ -164,12 +164,12 @@
     background-color: #edefef;
     text-align: center;
     display: flex;
+    margin: auto;
     margin-top: 100px;
     height: 600px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
-    width: 40%;
-    margin-left: 90px; }
-    @media screen and (max-width: 1204px) {
+    width: 40%; }
+    @media screen and (max-width: 1024px) {
       .menu__menu3 {
         width: 100%;
         margin: auto;
@@ -195,7 +195,7 @@
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #0231df, #0889fb);
       font-family: 'Parisienne', cursive; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu__menu3 a {
           width: 100%;
           margin: auto;
@@ -226,13 +226,13 @@
   .menu__menu4 {
     text-align: center;
     display: flex;
+    margin: auto;
     margin-top: 100px;
     height: 600px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
     width: 40%;
-    margin-left: 90px;
     background-color: #fdfffd; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu__menu4 {
         width: 100%;
         margin: auto;
@@ -270,7 +270,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu__menu4 a {
           width: 100%;
           margin: auto;
@@ -298,7 +298,7 @@
   color: #fdcb46;
   width: 100%;
   margin: auto; }
-  @media screen and (max-width: 1204px) {
+  @media screen and (max-width: 1024px) {
     .header {
       width: 100%;
       margin: auto;
@@ -315,7 +315,7 @@
   width: 100%;
   margin: auto;
   z-index: 2; }
-  @media screen and (max-width: 1204px) {
+  @media screen and (max-width: 1024px) {
     .footer {
       width: 100%;
       margin: auto;
@@ -337,14 +337,14 @@
     margin-right: auto;
     height: 50px;
     width: 25%; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .btn__prochainement {
         padding: 2px;
         font-size: 15px;
         height: 50px;
         margin: auto;
         padding-top: 15px; } }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .btn__prochainement {
         margin-bottom: 100px;
         width: 50%;
@@ -356,7 +356,7 @@
       display: inline;
       margin: auto;
       vertical-align: middle; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .btn__prochainement a {
           padding: 2px;
           font-size: 15px;
@@ -370,20 +370,20 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   25% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px); }
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px); }
   40% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(-10);
-    transform: translateY(-10); }
+    -webkit-transform: translateY(-5);
+    transform: translateY(-5); }
   60% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   75% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px); }
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px); }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
@@ -402,7 +402,7 @@
         animation-direction: normal;
         animation-name: points;
         animation-duration: 1.5s; }
-        @media screen and (max-width: 1204px) {
+        @media screen and (max-width: 1024px) {
           .btn__prochainement .fa-circle--1 {
             font-size: 1em;
             width: 5px;
@@ -428,7 +428,7 @@
         animation-direction: normal;
         animation-name: points;
         animation-duration: 1.5s; }
-        @media screen and (max-width: 1204px) {
+        @media screen and (max-width: 1024px) {
           .btn__prochainement .fa-circle--2 {
             font-size: 1em;
             width: 5px;
@@ -454,7 +454,7 @@
         animation-direction: normal;
         animation-name: points;
         animation-duration: 1.5s; }
-        @media screen and (max-width: 1204px) {
+        @media screen and (max-width: 1024px) {
           .btn__prochainement .fa-circle--3 {
             font-size: 1em;
             width: 5px;
@@ -471,8 +471,9 @@
     border-radius: 8px;
     background: #579c87;
     font: 13px Arial;
-    display: flex; }
-    @media screen and (max-width: 1204px) {
+    display: flex;
+    padding-top: 15px; }
+    @media screen and (max-width: 1024px) {
       .btn__mentions {
         padding: 2px;
         font-size: 15px;
@@ -539,7 +540,7 @@
       margin: auto;
       vertical-align: middle;
       margin-top: 5%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .btn__mentions a {
           padding: 2px;
           font-size: 15px;
@@ -553,8 +554,9 @@
     background: #579c87;
     font: 13px Arial;
     display: flex;
-    vertical-align: middle; }
-    @media screen and (max-width: 1204px) {
+    vertical-align: middle;
+    padding-top: 15px; }
+    @media screen and (max-width: 1024px) {
       .btn__contact {
         padding: 2px;
         font-size: 15px;
@@ -621,7 +623,7 @@
       margin: auto;
       vertical-align: middle;
       margin-top: 5%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .btn__contact a {
           padding: 2px;
           font-size: 15px;
@@ -640,7 +642,7 @@
     margin: auto;
     width: 60%;
     background-color: #fcdfdb; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu1__main {
         width: 100%;
         margin: auto; } }
@@ -656,11 +658,28 @@
       font-size: 200%;
       margin: auto;
       text-align: center; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu1__main__titre {
           font-size: 200%; } }
   .menu1__entrees, .menu1__plat, .menu1__dessert {
     font-family: 'Kalam', cursive; }
+    .menu1__entrees__ a.underline, .menu1__plat__ a.underline, .menu1__dessert__ a.underline {
+      position: relative;
+      text-decoration: none;
+      color: black; }
+      .menu1__entrees__ a.underline:before, .menu1__plat__ a.underline:before, .menu1__dessert__ a.underline:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .menu1__entrees__ a.underline:hover:before, .menu1__plat__ a.underline:hover:before, .menu1__dessert__ a.underline:hover:before {
+        visibility: visible;
+        width: 100%; }
     .menu1__entrees__prix, .menu1__plat__prix, .menu1__dessert__prix {
       display: flex; }
       @media screen and (max-width: 630px) {
@@ -670,15 +689,18 @@
           text-align: center;
           margin: auto; } }
     .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
+      display: flex;
+      margin: auto;
       font-size: 200%;
       margin-top: 80px;
       text-align: center;
       font-weight: bold; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
           margin: auto;
           font-size: 25px;
-          margin-top: 30px; } }
+          margin-top: 30px;
+          display: block; } }
       @media screen and (max-width: 630px) {
         .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
           margin: auto;
@@ -691,7 +713,7 @@
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu1__entrees__repas, .menu1__plat__repas, .menu1__dessert__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -702,19 +724,21 @@
           margin: auto; } }
     .menu1__entreesimg, .menu1__platimg, .menu1__dessertimg {
       float: left; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu1__entreesimg, .menu1__platimg, .menu1__dessertimg {
           display: none; } }
   .menu1__left {
-    float: left;
-    margin-left: -20px; }
-    @media screen and (max-width: 1204px) {
+    display: flex;
+    margin: auto;
+    margin-left: -30px; }
+    @media screen and (max-width: 1024px) {
       .menu1__left {
         display: none; } }
   .menu1__right {
-    float: right;
-    margin-right: -20px; }
-    @media screen and (max-width: 1204px) {
+    display: flex;
+    margin: auto;
+    margin-right: -30px; }
+    @media screen and (max-width: 1024px) {
       .menu1__right {
         display: none; } }
 
@@ -722,32 +746,9 @@
   display: flex;
   margin: auto;
   font-size: 30px; }
-  @media screen and (max-width: 1204px) {
+  @media screen and (max-width: 1024px) {
     .logo-fin {
       font-size: 80%; } }
-
-th, td {
-  padding: 30px; }
-
-a.underline {
-  position: relative;
-  text-decoration: none;
-  color: black; }
-
-a.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out; }
-
-a.underline:hover:before {
-  visibility: visible;
-  width: 100%; }
 
 .menu2 {
   max-width: 100%;
@@ -771,7 +772,7 @@ a.underline:hover:before {
     margin: auto;
     width: 60%;
     background-color: #fff5fe; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu2__main {
         width: 100%;
         margin: auto; } }
@@ -788,12 +789,12 @@ a.underline:hover:before {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__main__titre {
           font-size: 200%; } }
   .menu2__entrees {
     color: #c67412; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu2__entrees img {
         display: none; } }
     .menu2__entrees__titre {
@@ -802,7 +803,7 @@ a.underline:hover:before {
       margin-top: 80px;
       font-weight: bold;
       text-align: center; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__entrees__titre {
           margin: auto;
           font-size: 25px;
@@ -827,7 +828,7 @@ a.underline:hover:before {
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__entrees__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -838,7 +839,7 @@ a.underline:hover:before {
           margin: auto; } }
   .menu2__plat {
     color: #a46498; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu2__plat img {
         display: none; } }
     .menu2__plat__titre {
@@ -847,7 +848,7 @@ a.underline:hover:before {
       text-align: center;
       margin-top: 80px;
       font-weight: bold; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__plat__titre {
           margin: auto;
           font-size: 25px;
@@ -872,7 +873,7 @@ a.underline:hover:before {
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__plat__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -883,7 +884,7 @@ a.underline:hover:before {
           margin: auto; } }
   .menu2__dessert {
     color: #6e4ccc; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu2__dessert img {
         display: none; } }
     .menu2__dessert__titre {
@@ -892,7 +893,7 @@ a.underline:hover:before {
       text-align: center;
       margin-top: 80px;
       font-weight: bold; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__dessert__titre {
           margin: auto;
           font-size: 25px;
@@ -917,7 +918,7 @@ a.underline:hover:before {
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu2__dessert__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -978,7 +979,7 @@ a.underline.dessert {
     margin: auto;
     width: 60%;
     background-color: #edefef; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu3__main {
         width: 100%; } }
     .menu3__main__texte {
@@ -994,7 +995,7 @@ a.underline.dessert {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #0231df, #0889fb); }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu3__main__titre {
           font-size: 200%; } }
   .menu3__entrees, .menu3__plat, .menu3__dessert {
@@ -1003,7 +1004,7 @@ a.underline.dessert {
       position: relative;
       text-decoration: none;
       color: black; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu3__entrees img, .menu3__plat img, .menu3__dessert img {
         display: none; } }
     .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
@@ -1012,7 +1013,7 @@ a.underline.dessert {
       font-size: 150%;
       margin-top: 80px;
       font-weight: bold; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
           margin: auto;
           font-size: 20px;
@@ -1037,7 +1038,7 @@ a.underline.dessert {
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu3__entrees__repas, .menu3__plat__repas, .menu3__dessert__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -1067,19 +1068,22 @@ a.underline:hover:before {
   margin: auto;
   margin-bottom: 80px; }
   .menu4__left {
+    display: flex;
+    margin: auto;
     float: left;
     margin-left: -100px; }
   .menu4__right {
+    display: flex;
+    margin: auto;
     float: right;
-    margin-right: -100px;
-    margin-top: -20px; }
+    margin-right: -100px; }
   .menu4__main {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 60%;
     background-color: #fdfffd; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu4__main {
         width: 100%; } }
     .menu4__main__texte {
@@ -1095,24 +1099,44 @@ a.underline:hover:before {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu4__main__titre {
           font-size: 200%; } }
   .menu4__entrees, .menu4__plat, .menu4__dessert {
     font-family: 'Kalam', cursive; }
-    @media screen and (max-width: 1204px) {
+    @media screen and (max-width: 1024px) {
       .menu4__entrees img, .menu4__plat img, .menu4__dessert img {
         display: none; } }
     .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
+      display: flex;
+      margin: auto;
       text-align: center;
       font-size: 190%;
       margin-top: 80px;
       font-weight: bold; }
-      @media screen and (max-width: 1204px) {
+      .menu4__entrees__titre a.underline, .menu4__plat__titre a.underline, .menu4__dessert__titre a.underline {
+        position: relative;
+        text-decoration: none;
+        color: black; }
+        .menu4__entrees__titre a.underline:before, .menu4__plat__titre a.underline:before, .menu4__dessert__titre a.underline:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: black;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out; }
+        .menu4__entrees__titre a.underline:hover:before, .menu4__plat__titre a.underline:hover:before, .menu4__dessert__titre a.underline:hover:before {
+          visibility: visible;
+          width: 100%; }
+      @media screen and (max-width: 1024px) {
         .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
           margin: auto;
           font-size: 30px;
-          margin-top: 30px; } }
+          margin-top: 30px;
+          display: block; } }
       @media screen and (max-width: 630px) {
         .menu4__entrees__titre, .menu4__plat__titre, .menu4__dessert__titre {
           margin: auto;
@@ -1131,7 +1155,7 @@ a.underline:hover:before {
       text-align: left;
       justify-content: space-between;
       width: 100%; }
-      @media screen and (max-width: 1204px) {
+      @media screen and (max-width: 1024px) {
         .menu4__entrees__repas, .menu4__plat__repas, .menu4__dessert__repas {
           font-size: 15px; } }
       @media screen and (max-width: 630px) {
@@ -1141,26 +1165,6 @@ a.underline:hover:before {
           text-align: center;
           margin: auto; } }
 
-a.underline {
-  position: relative;
-  text-decoration: none;
-  color: black; }
-
-a.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out; }
-
-a.underline:hover:before {
-  visibility: visible;
-  width: 100%; }
-
 .mentions {
   width: 70%;
   display: flex;
@@ -1168,8 +1172,12 @@ a.underline:hover:before {
   flex-direction: column;
   background-color: #fff5fe;
   text-align: justify;
-  font-size: 30px;
-  margin-bottom: 100px; }
+  font-size: 20px;
+  margin-bottom: 100px;
+  font-family: sans-serif; }
+  @media screen and (max-width: 1024px) {
+    .mentions {
+      width: 100%; } }
   .mentions__texte {
     width: 80%;
     display: flex;
@@ -1178,22 +1186,51 @@ a.underline:hover:before {
   .mentions__editeur {
     text-align: justify; }
     .mentions__editeur__titre {
-      font-size: 35px; }
+      font-size: 20px; }
   .mentions__conditions {
     margin-top: 20px; }
     .mentions__conditions__titre {
-      font-size: 35px;
+      font-size: 20px;
       text-align: justify; }
   .mentions__services {
     margin-top: 20px; }
     .mentions__services__titre {
-      font-size: 35px;
+      font-size: 20px;
       text-align: justify; }
   .mentions__propriete {
     margin-top: 20px; }
     .mentions__propriete__titre {
-      font-size: 35px;
+      font-size: 20px;
       text-align: justify; }
+  .mentions__litiges {
+    margin-top: 20px; }
+    .mentions__litiges__titre {
+      font-size: 20px;
+      text-align: justify; }
+  .mentions__cookies {
+    margin-top: 20px; }
+    .mentions__cookies__titre {
+      font-size: 20px;
+      text-align: justify;
+      margin-bottom: 20px; }
+  .mentions__liens {
+    margin-top: 20px; }
+    .mentions__liens__titre {
+      margin-bottom: 20px; }
+  .mentions__limitation {
+    margin-top: 20px; }
+    .mentions__limitation__titre {
+      font-size: 20px; }
+  .mentions__declaration {
+    margin-top: 20px; }
+    .mentions__declaration__titre {
+      font-size: 20px; }
+  .mentions__donnees {
+    margin-top: 20px; }
+  .mentions__hebergement {
+    margin-top: 20px; }
+  .mentions__developpement {
+    margin-top: 20px; }
 
 h2 {
   text-align: center;

@@ -8,14 +8,19 @@
     margin-bottom: 80px;
 
     &__left {
+        display: flex;
+        margin: auto;
         float: left;
         margin-left: -100px;
+        
     }
     
     &__right {
+        display: flex;
+        margin: auto;
         float: right;
         margin-right: -100px;
-        margin-top: -20px;
+        
     }
     
     &__main {
@@ -67,14 +72,44 @@
         }
 
         &__titre {
+            display: flex;
+            margin: auto;
             text-align: center;
             font-size: 190%;
             margin-top: 80px;
             font-weight: bold;
+
+            & a.underline {
+                position: relative;
+                text-decoration: none;
+                color: black;
+                
+            
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: black;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                   }
+                
+                   &:hover:before {
+                    
+                        visibility: visible;
+                        width: 100%;
+                      
+                   }
+              }
             @media screen and (max-width: map-get($breakpoint, tablette)){
                 margin: auto;
                 font-size: 30px;
                 margin-top: 30px;
+                display: block;
                 
                 
         
@@ -113,29 +148,6 @@
 
 
 
-  a.underline {
-    position: relative;
-    text-decoration: none;
-    color: black;
+  
     
-
-  }
-    
-   a.underline:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-   }
-
-   a.underline:hover:before {
-    
-        visibility: visible;
-        width: 100%;
-      
-   }
+   

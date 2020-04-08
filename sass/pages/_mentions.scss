@@ -6,8 +6,17 @@
     flex-direction: column;
     background-color: $color-menu2;
     text-align: justify;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 100px;
+    font-family: sans-serif;
+
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        width: 100%;
+        
+        
+        
+
+    }
 
     &__texte {
         width: 80%;
@@ -20,7 +29,7 @@
 
         text-align: justify;
         &__titre {
-            font-size: 35px;
+            font-size: 20px;
         }
     }
 
@@ -28,7 +37,7 @@
 
             margin-top: 20px;
         &__titre {
-            font-size: 35px;
+            font-size: 20px;
             text-align: justify;
         }
     }
@@ -37,7 +46,7 @@
            margin-top: 20px;
 
         &__titre {
-            font-size: 35px;
+            font-size: 20px;
             text-align: justify;
         }
     }
@@ -46,9 +55,77 @@
           margin-top: 20px;
 
         &__titre {
-            font-size: 35px;
+            font-size: 20px;
             text-align: justify;
         }
+    }
+
+
+    &__litiges {
+        margin-top: 20px;
+
+        &__titre {
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+
+
+    &__cookies {
+        margin-top: 20px;
+        
+
+
+        &__titre {
+            font-size: 20px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__liens {
+        margin-top: 20px;
+
+
+        &__titre {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    &__limitation {
+        margin-top: 20px;
+
+
+        &__titre {
+            font-size: 20px;
+        }
+    }
+
+
+    &__declaration {
+        margin-top: 20px;
+
+
+        &__titre {
+            font-size: 20px;
+        }
+    }
+
+
+    &__donnees {
+        margin-top: 20px;
+    }
+
+
+
+    &__hebergement {
+        margin-top: 20px;
+    }
+
+
+    &__developpement {
+        margin-top: 20px;
     }
 }
 

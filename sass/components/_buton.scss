@@ -88,6 +88,7 @@
         background:$colorsecondaire;
         font: 13px Arial;
         display: flex;
+        padding-top: 15px;
       @include tablette-only-button;
         & :hover {
             @include wiggle;
@@ -118,6 +119,7 @@
         font: 13px Arial;
         display: flex;
         vertical-align: middle;
+        padding-top: 15px;
       @include tablette-only-button;
 
         & :hover {

@@ -62,6 +62,33 @@
         font-family: 'Kalam', cursive;
         
        
+
+        &__ a.underline {
+            position: relative;
+            text-decoration: none;
+            color: black;
+        
+          
+            
+           &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+           }
+        
+           &:hover:before {
+            
+                visibility: visible;
+                width: 100%;
+              
+           }
+        }
         
         &__prix {
             display: flex;
@@ -69,7 +96,8 @@
         }
 
         &__titre {
-            
+            display: flex;
+            margin: auto;
             font-size: 200%;
             margin-top: 80px;
             text-align: center;
@@ -78,6 +106,7 @@
                 margin: auto;
                 font-size: 25px;
                 margin-top: 30px;
+                display: block;
                 
                 
         
@@ -118,8 +147,8 @@
 
     &__left {
         
-        float: left;
-        margin-left: -20px;
+        @include left;
+
         @media screen and (max-width: map-get($breakpoint, tablette )){
             display: none;
             
@@ -129,8 +158,8 @@
     }
 
     &__right {
-        float: right;
-        margin-right: -20px;
+        @include right;
+
         @media screen and (max-width: map-get($breakpoint, tablette )){
             display: none;
             
@@ -163,35 +192,9 @@
 
 
 
-  th, td {
-    padding: 30px;
-  }
+  
 
-  a.underline {
-    position: relative;
-    text-decoration: none;
-    color: black;
-
-  }
-    
-   a.underline:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-   }
-
-   a.underline:hover:before {
-    
-        visibility: visible;
-        width: 100%;
-      
-   }
+ 
 
 
   
