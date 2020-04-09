@@ -96,12 +96,9 @@
         }
 
         &__titre {
-            display: flex;
-            margin: auto;
+            @include epd-titre;
             font-size: 200%;
-            margin-top: 80px;
-            text-align: center;
-            font-weight: bold;
+            
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 25px;

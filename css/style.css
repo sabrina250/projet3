@@ -691,10 +691,10 @@
     .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
       display: flex;
       margin: auto;
-      font-size: 200%;
-      margin-top: 80px;
       text-align: center;
-      font-weight: bold; }
+      margin-top: 80px;
+      font-weight: bold;
+      font-size: 200%; }
       @media screen and (max-width: 1024px) {
         .menu1__entrees__titre, .menu1__plat__titre, .menu1__dessert__titre {
           margin: auto;
@@ -799,10 +799,11 @@
         display: none; } }
     .menu2__entrees__titre {
       display: flex;
-      font-size: 150%;
+      margin: auto;
+      text-align: center;
       margin-top: 80px;
       font-weight: bold;
-      text-align: center; }
+      font-size: 150%; }
       @media screen and (max-width: 1024px) {
         .menu2__entrees__titre {
           margin: auto;
@@ -844,10 +845,11 @@
         display: none; } }
     .menu2__plat__titre {
       display: flex;
-      font-size: 150%;
+      margin: auto;
       text-align: center;
       margin-top: 80px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 150%; }
       @media screen and (max-width: 1024px) {
         .menu2__plat__titre {
           margin: auto;
@@ -889,10 +891,11 @@
         display: none; } }
     .menu2__dessert__titre {
       display: flex;
-      font-size: 150%;
+      margin: auto;
       text-align: center;
       margin-top: 80px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 150%; }
       @media screen and (max-width: 1024px) {
         .menu2__dessert__titre {
           margin: auto;
@@ -1004,15 +1007,29 @@ a.underline.dessert {
       position: relative;
       text-decoration: none;
       color: black; }
+      .menu3__entrees a.underline:before, .menu3__plat a.underline:before, .menu3__dessert a.underline:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .menu3__entrees a.underline:hover:before, .menu3__plat a.underline:hover:before, .menu3__dessert a.underline:hover:before {
+        visibility: visible;
+        width: 100%; }
     @media screen and (max-width: 1024px) {
       .menu3__entrees img, .menu3__plat img, .menu3__dessert img {
         display: none; } }
     .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
       display: flex;
+      margin: auto;
       text-align: center;
-      font-size: 150%;
       margin-top: 80px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 150%; }
       @media screen and (max-width: 1024px) {
         .menu3__entrees__titre, .menu3__plat__titre, .menu3__dessert__titre {
           margin: auto;
@@ -1047,21 +1064,6 @@ a.underline.dessert {
           flex-direction: column;
           text-align: center;
           margin: auto; } }
-
-a.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out; }
-
-a.underline:hover:before {
-  visibility: visible;
-  width: 100%; }
 
 .menu4 {
   max-width: 100%;
@@ -1111,9 +1113,9 @@ a.underline:hover:before {
       display: flex;
       margin: auto;
       text-align: center;
-      font-size: 190%;
       margin-top: 80px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 190%; }
       .menu4__entrees__titre a.underline, .menu4__plat__titre a.underline, .menu4__dessert__titre a.underline {
         position: relative;
         text-decoration: none;

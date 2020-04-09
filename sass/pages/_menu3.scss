@@ -75,6 +75,26 @@
             position: relative;
             text-decoration: none;
             color: black;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            
+               &:hover:before {
+                
+                    visibility: visible;
+                    width: 100%;
+                  
+               
+            }
         }
         & img {
             
@@ -86,12 +106,9 @@
             }
         }
         &__titre {
-            display: flex;
-            text-align: center;
+           @include epd-titre;
             font-size: 150%;
-            margin-top: 80px;
-            
-            font-weight: bold;
+           
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 margin: auto;
                 font-size: 20px;
@@ -139,21 +156,4 @@
 
   
     
-   a.underline:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-   }
-
-   a.underline:hover:before {
-    
-        visibility: visible;
-        width: 100%;
-      
-   }
+  
