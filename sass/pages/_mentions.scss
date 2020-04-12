@@ -25,109 +25,20 @@
         margin: auto;
     }
 
-    &__editeur {
+    &__editeur, &__condition, &__services, &__propriete, &__litiges, &__cookies, &__liens, &__limitation, &__declaration, &__donnees, &__hebergement, &__developpement  {
 
         text-align: justify;
-        &__titre {
-            font-size: 20px;
-        }
-    }
-
-    &__conditions {
-
-            margin-top: 20px;
-        &__titre {
-            font-size: 20px;
-            text-align: justify;
-        }
-    }
-
-    &__services {
-           margin-top: 20px;
-
-        &__titre {
-            font-size: 20px;
-            text-align: justify;
-        }
-    }
-
-    &__propriete {
-          margin-top: 20px;
-
-        &__titre {
-            font-size: 20px;
-            text-align: justify;
-        }
-    }
-
-
-    &__litiges {
-        margin-top: 20px;
-
-        &__titre {
-            font-size: 20px;
-            text-align: justify;
-        }
-    }
-
-
-    &__cookies {
-        margin-top: 20px;
         
-
-
         &__titre {
-            font-size: 20px;
-            text-align: justify;
+            margin-top: 20px;
             margin-bottom: 20px;
-        }
-    }
-
-    &__liens {
-        margin-top: 20px;
-
-
-        &__titre {
-            margin-bottom: 20px;
-        }
-    }
-
-
-    &__limitation {
-        margin-top: 20px;
-
-
-        &__titre {
             font-size: 20px;
+            font-weight: bold;
         }
-    }
-
-
-    &__declaration {
-        margin-top: 20px;
-
-
-        &__titre {
-            font-size: 20px;
-        }
-    }
-
-
-    &__donnees {
-        margin-top: 20px;
-    }
-
-
-
-    &__hebergement {
-        margin-top: 20px;
-    }
-
-
-    &__developpement {
-        margin-top: 20px;
     }
 }
+
+    
 
 h2 {
     text-align: center;

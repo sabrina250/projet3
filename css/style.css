@@ -1185,54 +1185,13 @@ a.underline.dessert {
     display: flex;
     flex-direction: column;
     margin: auto; }
-  .mentions__editeur {
+  .mentions__editeur, .mentions__condition, .mentions__services, .mentions__propriete, .mentions__litiges, .mentions__cookies, .mentions__liens, .mentions__limitation, .mentions__declaration, .mentions__donnees, .mentions__hebergement, .mentions__developpement {
     text-align: justify; }
-    .mentions__editeur__titre {
-      font-size: 20px; }
-  .mentions__conditions {
-    margin-top: 20px; }
-    .mentions__conditions__titre {
+    .mentions__editeur__titre, .mentions__condition__titre, .mentions__services__titre, .mentions__propriete__titre, .mentions__litiges__titre, .mentions__cookies__titre, .mentions__liens__titre, .mentions__limitation__titre, .mentions__declaration__titre, .mentions__donnees__titre, .mentions__hebergement__titre, .mentions__developpement__titre {
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 20px;
-      text-align: justify; }
-  .mentions__services {
-    margin-top: 20px; }
-    .mentions__services__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__propriete {
-    margin-top: 20px; }
-    .mentions__propriete__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__litiges {
-    margin-top: 20px; }
-    .mentions__litiges__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__cookies {
-    margin-top: 20px; }
-    .mentions__cookies__titre {
-      font-size: 20px;
-      text-align: justify;
-      margin-bottom: 20px; }
-  .mentions__liens {
-    margin-top: 20px; }
-    .mentions__liens__titre {
-      margin-bottom: 20px; }
-  .mentions__limitation {
-    margin-top: 20px; }
-    .mentions__limitation__titre {
-      font-size: 20px; }
-  .mentions__declaration {
-    margin-top: 20px; }
-    .mentions__declaration__titre {
-      font-size: 20px; }
-  .mentions__donnees {
-    margin-top: 20px; }
-  .mentions__hebergement {
-    margin-top: 20px; }
-  .mentions__developpement {
-    margin-top: 20px; }
+      font-weight: bold; }
 
 h2 {
   text-align: center;
