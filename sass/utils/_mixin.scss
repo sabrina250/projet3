@@ -65,90 +65,89 @@
   }
  }
 
-@mixin tablette-only-acceuil {
-    @media screen and (max-width: map-get($breakpoint, tablette )){
-        width: 100%;
-        margin: auto;
-        height: 200px;
-        font-size: 200%;
-        margin-bottom: 10%;
-        margin-top: 10%;
-        
+ @mixin tablette-only-a {
+  @media screen and (max-width: map-get($breakpoint, tablette )){
+      width:45%;
+      margin: auto;
+      height: 300px;
+      font-size: 200%;
+      margin-bottom: 10%;
+      margin-top: 10%;
+      
 
-        
-    }
+      
+  }
 }
 
 @mixin mobile-only-acceuil {
-  @media screen and (max-width: map-get($mobilepoint, mobile )){
-      width: 100%;
-      margin: auto;
-      height: 150px;
-      font-size: 30px;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      
+@media screen and (max-width: map-get($mobilepoint, mobile )){
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
 
-      
-  }
+    
+}
 }
 
-@mixin mobile-only-menu {
-  @media screen and (max-width: map-get($mobilepoint, mobile )){
-      width: 100%;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 30px;
-      
-      
+@mixin mobile-only-a {
+@media screen and (max-width: map-get($mobilepoint, mobile )){
+    width: 100%;
+    margin: auto;
+    
+    font-size: 30px;
+    
+    
 
-      
-  }
+    
+}
 }
 
 
 
 @mixin tablette-only-menu {
-  @media screen and (max-width: map-get($breakpoint, tablette )){
-      width: 100%;
-      margin: auto;
-      height: 100%;
-      font-size: 150%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      
-      
+@media screen and (max-width: map-get($breakpoint, tablette )){
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    font-size: 150%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    
 
-      
-  }
+    
+}
 }
 
 
 @mixin tablette-only-base {
-    @media screen and (max-width: map-get($breakpoint, tablette )){
-        max-width: 100%;
-        margin: 0px;
-        
+  @media screen and (max-width: map-get($breakpoint, tablette )){
+      max-width: 100%;
+      margin: 0px;
+      
 
-    }
+  }
 }
 
 @mixin tablette-only-header {
-    @media screen and (max-width: map-get($breakpoint, tablette )){
-        width: 100%;
-        margin: auto;
-        font-size: 15px;
+  @media screen and (max-width: map-get($breakpoint, tablette )){
+      width: 100%;
+      margin: auto;
+      font-size: 15px;
 
-    }
+  }
 }
 
 @mixin tablette-only-footer {
-    @media screen and (max-width: map-get($breakpoint, tablette )){
-        width: 100%;
-        margin: auto;
-        font-size: 15px;
-    }
+  @media screen and (max-width: map-get($breakpoint, tablette )){
+      width: 100%;
+      margin: auto;
+      font-size: 15px;
+  }
 }
 
 

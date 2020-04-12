@@ -22,22 +22,25 @@
    
     &__menu1 {
         @include menu-acceuil;
+        @include tablette-only-a;
         background-color: $color-menu1;
-        @include tablette-only-menu;
+        
         @include mobile-only-acceuil;
         font-family: 'Devonshire', cursive;
         
         & a:hover{
             @include menu-hover;
+            
             z-index: 1;
         }
     
         & a {
             color: black;
             @include menu-a;
-            @include tablette-only-acceuil;
+            @include mobile-only-a;
             
-            @include mobile-only-acceuil;
+            
+            
             
     
              }
@@ -66,16 +69,18 @@
 
     &__menu2 {
         @include menu-acceuil;
+        @include tablette-only-a;
         background-color: $color-menu2;
-        @include tablette-only-menu;
+        
         @include mobile-only-acceuil;
         
         
         & a {
-            @include tablette-only-acceuil;
-            @include mobile-only-acceuil;
+            
+            
             
             @include menu-a;
+            @include mobile-only-a;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
@@ -98,17 +103,17 @@
         
 
     &__menu3 {
-        
-        @include tablette-only-menu;
+        @include menu-acceuil;
+        @include tablette-only-a;
         @include mobile-only-acceuil;
         background-color: $color-menu3 ;
-        @include menu-acceuil;
+        
         
         & a {
             @include menu-a;
+            @include mobile-only-a;
             
-            @include tablette-only-acceuil;
-            @include mobile-only-acceuil;
+            
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
@@ -129,7 +134,7 @@
     &__menu4 {
         @include menu-acceuil;
         background-color: $color-menu4;
-        @include tablette-only-menu;
+        @include tablette-only-a;
         @include mobile-only-acceuil;
 
         & a:hover{
@@ -139,9 +144,10 @@
         
         
         & a {
-            @include tablette-only-acceuil;
-            @include mobile-only-acceuil;
+            
+            
             @include menu-a;
+            @include mobile-only-a;
             font-family: 'Kalam', cursive;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -157,6 +163,7 @@
            
     }
 }
+
 
 
 

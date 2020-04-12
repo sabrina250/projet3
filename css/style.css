@@ -32,17 +32,17 @@
     font-family: 'Devonshire', cursive; }
     @media screen and (max-width: 1024px) {
       .menu__menu1 {
-        width: 100%;
+        width: 45%;
         margin: auto;
-        height: 100%;
-        font-size: 150%;
-        margin-top: 10%;
-        margin-bottom: 10%; } }
+        height: 300px;
+        font-size: 200%;
+        margin-bottom: 10%;
+        margin-top: 10%; } }
     @media screen and (max-width: 630px) {
       .menu__menu1 {
         width: 100%;
         margin: auto;
-        height: 150px;
+        height: 200px;
         font-size: 30px;
         margin-top: 10%;
         margin-bottom: 10%; } }
@@ -65,22 +65,11 @@
       margin: auto;
       text-decoration: none;
       font-size: 40px; }
-      @media screen and (max-width: 1024px) {
-        .menu__menu1 a {
-          width: 100%;
-          margin: auto;
-          height: 200px;
-          font-size: 200%;
-          margin-bottom: 10%;
-          margin-top: 10%; } }
       @media screen and (max-width: 630px) {
         .menu__menu1 a {
           width: 100%;
           margin: auto;
-          height: 150px;
-          font-size: 30px;
-          margin-top: 10%;
-          margin-bottom: 10%; } }
+          font-size: 30px; } }
     .menu__menu1 img {
       width: 50%;
       margin: auto; }
@@ -109,17 +98,17 @@
     background-color: #fff5fe; }
     @media screen and (max-width: 1024px) {
       .menu__menu2 {
-        width: 100%;
+        width: 45%;
         margin: auto;
-        height: 100%;
-        font-size: 150%;
-        margin-top: 10%;
-        margin-bottom: 10%; } }
+        height: 300px;
+        font-size: 200%;
+        margin-bottom: 10%;
+        margin-top: 10%; } }
     @media screen and (max-width: 630px) {
       .menu__menu2 {
         width: 100%;
         margin: auto;
-        height: 150px;
+        height: 200px;
         font-size: 30px;
         margin-top: 10%;
         margin-bottom: 10%; } }
@@ -132,22 +121,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
-      @media screen and (max-width: 1024px) {
-        .menu__menu2 a {
-          width: 100%;
-          margin: auto;
-          height: 200px;
-          font-size: 200%;
-          margin-bottom: 10%;
-          margin-top: 10%; } }
       @media screen and (max-width: 630px) {
         .menu__menu2 a {
           width: 100%;
           margin: auto;
-          height: 150px;
-          font-size: 30px;
-          margin-top: 10%;
-          margin-bottom: 10%; } }
+          font-size: 30px; } }
     .menu__menu2 a:hover {
       -webkit-transition: all 300ms ease-in;
       -moz-transition: all 300ms ease-in;
@@ -161,27 +139,27 @@
       transform: scale(1.2);
       z-index: 1; }
   .menu__menu3 {
-    background-color: #edefef;
     text-align: center;
     display: flex;
     margin: auto;
     margin-top: 100px;
     height: 600px;
     box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
-    width: 40%; }
+    width: 40%;
+    background-color: #edefef; }
     @media screen and (max-width: 1024px) {
       .menu__menu3 {
-        width: 100%;
+        width: 45%;
         margin: auto;
-        height: 100%;
-        font-size: 150%;
-        margin-top: 10%;
-        margin-bottom: 10%; } }
+        height: 300px;
+        font-size: 200%;
+        margin-bottom: 10%;
+        margin-top: 10%; } }
     @media screen and (max-width: 630px) {
       .menu__menu3 {
         width: 100%;
         margin: auto;
-        height: 150px;
+        height: 200px;
         font-size: 30px;
         margin-top: 10%;
         margin-bottom: 10%; } }
@@ -195,22 +173,11 @@
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #0231df, #0889fb);
       font-family: 'Parisienne', cursive; }
-      @media screen and (max-width: 1024px) {
-        .menu__menu3 a {
-          width: 100%;
-          margin: auto;
-          height: 200px;
-          font-size: 200%;
-          margin-bottom: 10%;
-          margin-top: 10%; } }
       @media screen and (max-width: 630px) {
         .menu__menu3 a {
           width: 100%;
           margin: auto;
-          height: 150px;
-          font-size: 30px;
-          margin-top: 10%;
-          margin-bottom: 10%; } }
+          font-size: 30px; } }
     .menu__menu3 a:hover {
       -webkit-transition: all 300ms ease-in;
       -moz-transition: all 300ms ease-in;
@@ -234,17 +201,17 @@
     background-color: #fdfffd; }
     @media screen and (max-width: 1024px) {
       .menu__menu4 {
-        width: 100%;
+        width: 45%;
         margin: auto;
-        height: 100%;
-        font-size: 150%;
-        margin-top: 10%;
-        margin-bottom: 10%; } }
+        height: 300px;
+        font-size: 200%;
+        margin-bottom: 10%;
+        margin-top: 10%; } }
     @media screen and (max-width: 630px) {
       .menu__menu4 {
         width: 100%;
         margin: auto;
-        height: 150px;
+        height: 200px;
         font-size: 30px;
         margin-top: 10%;
         margin-bottom: 10%; } }
@@ -270,22 +237,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
-      @media screen and (max-width: 1024px) {
-        .menu__menu4 a {
-          width: 100%;
-          margin: auto;
-          height: 200px;
-          font-size: 200%;
-          margin-bottom: 10%;
-          margin-top: 10%; } }
       @media screen and (max-width: 630px) {
         .menu__menu4 a {
           width: 100%;
           margin: auto;
-          height: 150px;
-          font-size: 30px;
-          margin-top: 10%;
-          margin-bottom: 10%; } }
+          font-size: 30px; } }
 
 .header {
   text-decoration: none;
@@ -1185,54 +1141,13 @@ a.underline.dessert {
     display: flex;
     flex-direction: column;
     margin: auto; }
-  .mentions__editeur {
+  .mentions__editeur, .mentions__condition, .mentions__services, .mentions__propriete, .mentions__litiges, .mentions__cookies, .mentions__liens, .mentions__limitation, .mentions__declaration, .mentions__donnees, .mentions__hebergement, .mentions__developpement {
     text-align: justify; }
-    .mentions__editeur__titre {
-      font-size: 20px; }
-  .mentions__conditions {
-    margin-top: 20px; }
-    .mentions__conditions__titre {
+    .mentions__editeur__titre, .mentions__condition__titre, .mentions__services__titre, .mentions__propriete__titre, .mentions__litiges__titre, .mentions__cookies__titre, .mentions__liens__titre, .mentions__limitation__titre, .mentions__declaration__titre, .mentions__donnees__titre, .mentions__hebergement__titre, .mentions__developpement__titre {
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 20px;
-      text-align: justify; }
-  .mentions__services {
-    margin-top: 20px; }
-    .mentions__services__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__propriete {
-    margin-top: 20px; }
-    .mentions__propriete__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__litiges {
-    margin-top: 20px; }
-    .mentions__litiges__titre {
-      font-size: 20px;
-      text-align: justify; }
-  .mentions__cookies {
-    margin-top: 20px; }
-    .mentions__cookies__titre {
-      font-size: 20px;
-      text-align: justify;
-      margin-bottom: 20px; }
-  .mentions__liens {
-    margin-top: 20px; }
-    .mentions__liens__titre {
-      margin-bottom: 20px; }
-  .mentions__limitation {
-    margin-top: 20px; }
-    .mentions__limitation__titre {
-      font-size: 20px; }
-  .mentions__declaration {
-    margin-top: 20px; }
-    .mentions__declaration__titre {
-      font-size: 20px; }
-  .mentions__donnees {
-    margin-top: 20px; }
-  .mentions__hebergement {
-    margin-top: 20px; }
-  .mentions__developpement {
-    margin-top: 20px; }
+      font-weight: bold; }
 
 h2 {
   text-align: center;
