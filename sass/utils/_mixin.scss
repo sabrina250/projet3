@@ -65,7 +65,7 @@
   }
  }
 
-@mixin tablette-only-acceuil {
+@mixin tablette-only-a {
     @media screen and (max-width: map-get($breakpoint, tablette )){
         width: 100%;
         margin: auto;
