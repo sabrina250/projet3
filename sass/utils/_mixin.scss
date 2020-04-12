@@ -31,6 +31,29 @@
         margin-right: -30px;
 }
 
+@mixin underline {
+            position: relative;
+            text-decoration: none;
+            color: black;
+}
+
+@mixin underline-before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: black;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+}
+
+@mixin underline-hover-before {
+                        visibility: visible;
+                        width: 100%;
+}
+
 @mixin epd-titre {
             display: flex;
             margin: auto;
