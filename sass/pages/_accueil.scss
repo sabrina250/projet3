@@ -91,7 +91,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
-            background-image: -moz-linear-gradient(left,#e38913,#8f5bfe);
+            background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
         }
 
         
@@ -164,7 +164,7 @@
             background-clip: initial;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image:-moz-linear-gradient(left, #41963c, #beff7f);
+            background-image:-webkit-linear-gradient(left, #41963c, #beff7f);
             
 
             
