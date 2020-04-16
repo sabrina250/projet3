@@ -171,6 +171,34 @@
 
     }
 
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        font-size: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+
+    }
+
+    &__img {
+        @media screen and (max-width: map-get($breakpoint, tablette )){
+            width: 30%;
+            height: 30%;
+            
+            
+    
+        }
+    
+        @media screen and (max-width: map-get($mobilepoint, mobile )){
+            
+            width: 30%;
+            height: 30%;
+            margin: auto;
+            
+    
+        }
+    }
+
 }
 
 

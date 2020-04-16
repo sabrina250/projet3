@@ -119,7 +119,7 @@
       background-clip: initial;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: -moz-linear-gradient(left, #e38913, #8f5bfe); }
+      background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
     .menu__menu2__menu {
       color: #e38913;
       text-decoration: none; }
@@ -211,7 +211,7 @@
       background-clip: initial;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: -moz-linear-gradient(left, #41963c, #beff7f); }
+      background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
       @media screen and (max-width: 630px) {
         .menu__menu4 a {
           width: 100%;
@@ -623,6 +623,21 @@
   @media screen and (max-width: 1400px) {
     .logo-fin {
       font-size: 80%; } }
+  @media screen and (max-width: 630px) {
+    .logo-fin {
+      font-size: 30%;
+      display: flex;
+      flex-direction: column;
+      margin: auto; } }
+  @media screen and (max-width: 1400px) {
+    .logo-fin__img {
+      width: 30%;
+      height: 30%; } }
+  @media screen and (max-width: 630px) {
+    .logo-fin__img {
+      width: 30%;
+      height: 30%;
+      margin: auto; } }
 
 .menu2 {
   max-width: 100%;
