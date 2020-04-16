@@ -81,21 +81,33 @@
             
             @include menu-a;
             @include mobile-only-a;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left,#e38913,#8f5bfe);
+            
            
             
         }
 
-        
+        &__chic {
+            background-clip: initial;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            background-image: -moz-linear-gradient(left,#e38913,#8f5bfe);
+        }
 
+        
+        &__menu {
+            color:#e38913;
+            text-decoration: none;
+            
+        }
            
 
         & a:hover{
             @include menu-hover;
             z-index: 1;
         }
+
+        
 
 
     }
@@ -113,10 +125,10 @@
             @include menu-a;
             @include mobile-only-a;
             
-            
+            background-clip: initial;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left,#0231df,#0889fb);
+            background-image: -webkit-linear-gradient(left,#0231df,#7ac1ff);
             font-family: 'Parisienne', cursive;
             
 
@@ -149,9 +161,10 @@
             @include menu-a;
             @include mobile-only-a;
             font-family: 'Kalam', cursive;
+            background-clip: initial;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
+            background-image:-moz-linear-gradient(left, #41963c, #beff7f);
             
 
             
