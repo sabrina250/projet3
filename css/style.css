@@ -516,6 +516,8 @@
     flex-direction: column;
     margin: auto;
     width: 60%;
+    margin-top: 80px;
+    margin-bottom: 150px;
     background-color: #fcdfdb; }
     @media screen and (max-width: 1400px) {
       .menu1__main {
@@ -639,6 +641,9 @@
       height: 30%;
       margin: auto; } }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 .menu2 {
   max-width: 100%;
   margin: auto;
@@ -660,6 +665,8 @@
     flex-direction: column;
     margin: auto;
     width: 60%;
+    margin-top: 80px;
+    margin-bottom: 150px;
     background-color: #fff5fe; }
     @media screen and (max-width: 1400px) {
       .menu2__main {
@@ -865,6 +872,8 @@ a.underline.dessert {
     flex-direction: column;
     margin: auto;
     width: 60%;
+    margin-top: 80px;
+    margin-bottom: 150px;
     background-color: #edefef; }
     @media screen and (max-width: 1400px) {
       .menu3__main {
@@ -967,6 +976,8 @@ a.underline.dessert {
     flex-direction: column;
     margin: auto;
     width: 60%;
+    margin-top: 80px;
+    margin-bottom: 150px;
     background-color: #fdfffd; }
     @media screen and (max-width: 1400px) {
       .menu4__main {
