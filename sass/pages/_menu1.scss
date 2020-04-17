@@ -204,6 +204,24 @@
 
 .titre {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        font-size: 30%;
+        margin: auto;
+        text-align: center;
+        
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        font-size: 30%;
+        margin: auto;
+        text-align: center;
+        
+
+    }
 }
 
 

@@ -643,6 +643,16 @@
 
 .titre {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      font-size: 30%;
+      margin: auto;
+      text-align: center; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      font-size: 30%;
+      margin: auto;
+      text-align: center; } }
 
 .menu2 {
   max-width: 100%;
@@ -1089,5 +1099,15 @@ a.underline.dessert {
 h2 {
   text-align: center;
   font-size: 40px; }
+  @media screen and (max-width: 1400px) {
+    h2 {
+      font-size: 30px;
+      margin: auto;
+      text-align: center; } }
+  @media screen and (max-width: 630px) {
+    h2 {
+      font-size: 30px;
+      margin: auto;
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
