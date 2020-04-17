@@ -43,5 +43,23 @@
 h2 {
     text-align: center;
     font-size: 40px;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        
+
+    }
 
 }
