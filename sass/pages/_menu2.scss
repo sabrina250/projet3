@@ -32,10 +32,7 @@
         @include menu-main;
         background-color: $color-menu2 ;
 
-        @media screen and (max-width: map-get($breakpoint, tablette )){
-            width: 100%;
-            margin: auto;
-            }
+        @include menu-main-tablette;
 
             &__texte {
                 display: flex;
@@ -46,7 +43,7 @@
 
         &__titre {
         @include menu-titre;
-        font-family: 'Parisienne', cursive;
+        
         
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -54,7 +51,7 @@
 
         @media screen and (max-width: map-get($breakpoint, tablette )){
             font-size: 200%;
-            
+            margin-bottom: 20px;
             
     
         }
@@ -178,6 +175,7 @@
     &__dessert {
         
         color: #6e4ccc;
+        
         
         & img {
            
