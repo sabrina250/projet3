@@ -32,10 +32,7 @@
         @include menu-main;
         background-color: $color-menu2 ;
 
-        @media screen and (max-width: map-get($breakpoint, tablette )){
-            width: 100%;
-            margin: auto;
-            }
+        @include menu-main-tablette;
 
             &__texte {
                 display: flex;
@@ -46,7 +43,7 @@
 
         &__titre {
         @include menu-titre;
-        font-family: 'Parisienne', cursive;
+        
         
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -54,7 +51,7 @@
 
         @media screen and (max-width: map-get($breakpoint, tablette )){
             font-size: 200%;
-            
+            margin-bottom: 20px;
             
     
         }
@@ -179,6 +176,7 @@
         
         color: #6e4ccc;
         
+        
         & img {
            
             @media screen and (max-width: map-get($breakpoint, tablette )){
@@ -269,3 +267,21 @@
    a.underline.dessert {
     color: #6e4ccc;
    }
+
+   .titre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        display: none;
+        
+        
+        
+
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        display: none;
+        
+
+    }
+}

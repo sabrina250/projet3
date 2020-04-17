@@ -27,9 +27,7 @@
         
         @include menu-main;
         background-color: $color-menu4 ;
-        @media screen and (max-width: map-get($breakpoint, tablette )){
-            width: 100%;
-            }
+        @include menu-main-tablette;
 
             &__texte {
                 display: flex;
@@ -46,7 +44,7 @@
         background-image: -webkit-linear-gradient(left,#41963c,#beff7f);
         @media screen and (max-width: map-get($breakpoint, tablette)){
             font-size: 200%;
-            
+            margin-bottom: 20px;
             
     
         }
@@ -131,7 +129,23 @@
 }
 
 
+.titre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        display: none;
+        
+        
+        
 
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        display: none;
+        
+
+    }
+}
 
 
   

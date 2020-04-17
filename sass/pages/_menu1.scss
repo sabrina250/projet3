@@ -12,10 +12,7 @@
     &__main {
         @include menu-main;
         background-color: $color-menu1 ;
-        @media screen and (max-width: map-get($breakpoint, tablette )){
-            width: 100%;
-            margin: auto;
-        }
+        @include menu-main-tablette;
             
             &__texte {
                 display: flex;
@@ -31,16 +28,23 @@
         &__img {
             display: flex;
             margin: auto;
+           
+            width: 200px;
+            @media screen and (max-width: map-get($breakpoint, tablette )){
+                width: 100px;
+                
+                
+        
+            }
         
             
         }
 
         &__titre {
-            font-size: 200%;
-            margin: auto;
-            text-align: center;
+            @include menu-titre;
             @media screen and (max-width: map-get($breakpoint, tablette )){
                 font-size: 200%;
+                margin-bottom: 20px;
                 
                 
         
@@ -163,6 +167,7 @@
     display: flex;
     margin: auto;
     font-size: 30px;
+    
 
     @media screen and (max-width: map-get($breakpoint, tablette )){
         font-size: 80%;
@@ -205,9 +210,7 @@
 .titre {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     @media screen and (max-width: map-get($breakpoint, tablette )){
-        font-size: 30%;
-        margin: auto;
-        text-align: center;
+        display: none;
         
         
         
@@ -216,9 +219,7 @@
 
     @media screen and (max-width: map-get($mobilepoint, mobile )){
         
-        font-size: 30%;
-        margin: auto;
-        text-align: center;
+        display: none;
         
 
     }

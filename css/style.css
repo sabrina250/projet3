@@ -26,7 +26,7 @@
     margin: auto;
     margin-top: 100px;
     height: 600px;
-    box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     width: 40%;
     background-color: #fcdfdb;
     font-family: 'Devonshire', cursive; }
@@ -85,7 +85,7 @@
     margin: auto;
     margin-top: 100px;
     height: 600px;
-    box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     width: 40%;
     background-color: #fff5fe; }
     @media screen and (max-width: 1400px) {
@@ -133,7 +133,7 @@
     margin: auto;
     margin-top: 100px;
     height: 600px;
-    box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     width: 40%;
     background-color: #edefef; }
     @media screen and (max-width: 1400px) {
@@ -178,7 +178,7 @@
     margin: auto;
     margin-top: 100px;
     height: 600px;
-    box-shadow: 2px 4px 23px 5px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     width: 40%;
     background-color: #fdfffd; }
     @media screen and (max-width: 1400px) {
@@ -516,13 +516,16 @@
     flex-direction: column;
     margin: auto;
     width: 60%;
-    margin-top: 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     background-color: #fcdfdb; }
     @media screen and (max-width: 1400px) {
       .menu1__main {
         width: 100%;
-        margin: auto; } }
+        margin: auto;
+        padding-top: 20px; } }
     .menu1__main__texte {
       display: flex;
       margin: auto;
@@ -530,14 +533,20 @@
       width: 80%; }
     .menu1__main__img {
       display: flex;
-      margin: auto; }
-    .menu1__main__titre {
-      font-size: 200%;
       margin: auto;
-      text-align: center; }
+      width: 200px; }
+      @media screen and (max-width: 1400px) {
+        .menu1__main__img {
+          width: 100px; } }
+    .menu1__main__titre {
+      font-size: 60px;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 100px; }
       @media screen and (max-width: 1400px) {
         .menu1__main__titre {
-          font-size: 200%; } }
+          font-size: 200%;
+          margin-bottom: 20px; } }
   .menu1__entrees, .menu1__plat, .menu1__dessert {
     font-family: 'Kalam', cursive; }
     .menu1__entrees__ a.underline, .menu1__plat__ a.underline, .menu1__dessert__ a.underline {
@@ -645,14 +654,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   @media screen and (max-width: 1400px) {
     .titre {
-      font-size: 30%;
-      margin: auto;
-      text-align: center; } }
+      display: none; } }
   @media screen and (max-width: 630px) {
     .titre {
-      font-size: 30%;
-      margin: auto;
-      text-align: center; } }
+      display: none; } }
 
 .menu2 {
   max-width: 100%;
@@ -675,29 +680,33 @@
     flex-direction: column;
     margin: auto;
     width: 60%;
-    margin-top: 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     background-color: #fff5fe; }
     @media screen and (max-width: 1400px) {
       .menu2__main {
         width: 100%;
-        margin: auto; } }
+        margin: auto;
+        padding-top: 20px; } }
     .menu2__main__texte {
       display: flex;
       flex-direction: column;
       margin: auto;
       width: 70%; }
     .menu2__main__titre {
-      font-size: 200%;
+      font-size: 60px;
       margin: auto;
       text-align: center;
-      font-family: 'Parisienne', cursive;
+      margin-bottom: 100px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e38913, #8f5bfe); }
       @media screen and (max-width: 1400px) {
         .menu2__main__titre {
-          font-size: 200%; } }
+          font-size: 200%;
+          margin-bottom: 20px; } }
   .menu2__entrees {
     color: #c67412; }
     @media screen and (max-width: 1400px) {
@@ -861,6 +870,15 @@ a.underline.plat {
 a.underline.dessert {
   color: #6e4ccc; }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
+
 .menu3 {
   max-width: 100%;
   margin: auto;
@@ -882,28 +900,34 @@ a.underline.dessert {
     flex-direction: column;
     margin: auto;
     width: 60%;
-    margin-top: 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     background-color: #edefef; }
     @media screen and (max-width: 1400px) {
       .menu3__main {
-        width: 100%; } }
+        width: 100%;
+        margin: auto;
+        padding-top: 20px; } }
     .menu3__main__texte {
       display: flex;
       flex-direction: column;
       margin: auto;
       width: 70%; }
     .menu3__main__titre {
-      font-size: 200%;
+      font-size: 60px;
       margin: auto;
       text-align: center;
+      margin-bottom: 100px;
       font-family: 'Parisienne', cursive;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: -webkit-linear-gradient(left, #0231df, #0889fb); }
+      background-image: -webkit-linear-gradient(left, #0231df, #7ac1ff); }
       @media screen and (max-width: 1400px) {
         .menu3__main__titre {
-          font-size: 200%; } }
+          font-size: 200%;
+          margin-bottom: 20px; } }
   .menu3__entrees, .menu3__plat, .menu3__dessert {
     font-family: 'Kalam', cursive; }
     .menu3__entrees a.underline, .menu3__plat a.underline, .menu3__dessert a.underline {
@@ -967,6 +991,15 @@ a.underline.dessert {
           text-align: center;
           margin: auto; } }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
+
 .menu4 {
   max-width: 100%;
   margin: auto;
@@ -986,28 +1019,34 @@ a.underline.dessert {
     flex-direction: column;
     margin: auto;
     width: 60%;
-    margin-top: 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
     margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     background-color: #fdfffd; }
     @media screen and (max-width: 1400px) {
       .menu4__main {
-        width: 100%; } }
+        width: 100%;
+        margin: auto;
+        padding-top: 20px; } }
     .menu4__main__texte {
       display: flex;
       margin: auto;
       flex-direction: column;
       width: 80%; }
     .menu4__main__titre {
-      font-size: 200%;
+      font-size: 60px;
       margin: auto;
       text-align: center;
+      margin-bottom: 100px;
       font-family: 'Kalam', cursive;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #41963c, #beff7f); }
       @media screen and (max-width: 1400px) {
         .menu4__main__titre {
-          font-size: 200%; } }
+          font-size: 200%;
+          margin-bottom: 20px; } }
   .menu4__entrees, .menu4__plat, .menu4__dessert {
     font-family: 'Kalam', cursive; }
     @media screen and (max-width: 1400px) {
@@ -1070,6 +1109,15 @@ a.underline.dessert {
           text-align: center;
           margin: auto; } }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
+
 .mentions {
   width: 70%;
   display: flex;
@@ -1101,13 +1149,15 @@ h2 {
   font-size: 40px; }
   @media screen and (max-width: 1400px) {
     h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 30px;
-      margin: auto;
       text-align: center; } }
   @media screen and (max-width: 630px) {
     h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 30px;
-      margin: auto;
       text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

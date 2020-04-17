@@ -44,8 +44,10 @@ h2 {
     text-align: center;
     font-size: 40px;
     @media screen and (max-width: map-get($breakpoint, tablette )){
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 30px;
-        margin: auto;
+        
         text-align: center;
         
         
@@ -54,9 +56,10 @@ h2 {
     }
 
     @media screen and (max-width: map-get($mobilepoint, mobile )){
-        
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 30px;
-        margin: auto;
+        
         text-align: center;
         
 
