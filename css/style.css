@@ -645,14 +645,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   @media screen and (max-width: 1400px) {
     .titre {
-      font-size: 30%;
-      margin: auto;
-      text-align: center; } }
+      display: none; } }
   @media screen and (max-width: 630px) {
     .titre {
-      font-size: 30%;
-      margin: auto;
-      text-align: center; } }
+      display: none; } }
 
 .menu2 {
   max-width: 100%;
@@ -861,6 +857,15 @@ a.underline.plat {
 a.underline.dessert {
   color: #6e4ccc; }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
+
 .menu3 {
   max-width: 100%;
   margin: auto;
@@ -967,6 +972,15 @@ a.underline.dessert {
           text-align: center;
           margin: auto; } }
 
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
+
 .menu4 {
   max-width: 100%;
   margin: auto;
@@ -1069,6 +1083,15 @@ a.underline.dessert {
           flex-direction: column;
           text-align: center;
           margin: auto; } }
+
+.titre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  @media screen and (max-width: 1400px) {
+    .titre {
+      display: none; } }
+  @media screen and (max-width: 630px) {
+    .titre {
+      display: none; } }
 
 .mentions {
   width: 70%;

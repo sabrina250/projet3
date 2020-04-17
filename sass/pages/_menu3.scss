@@ -139,7 +139,23 @@
 }
 
 
+.titre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen and (max-width: map-get($breakpoint, tablette )){
+        display: none;
+        
+        
+        
 
+    }
+
+    @media screen and (max-width: map-get($mobilepoint, mobile )){
+        
+        display: none;
+        
+
+    }
+}
 
 
 
