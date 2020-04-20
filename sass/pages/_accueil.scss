@@ -12,11 +12,42 @@
         
     }
      
-        
-     
+    &__delice {
+        background-clip: initial;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left,#0231df,#7ac1ff);
+            font-family: 'Parisienne', cursive;
 
+    }  
+
+    &__palette {
+        font-family: 'Kalam', cursive;
+        background-clip: initial;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image:-webkit-linear-gradient(left, #41963c, #beff7f);
+    }
+     
     &__titre {
         font-family: 'Kalam', cursive;
+    }
+
+    &__titremenu3 {
+        background-clip: initial;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left,#0231df,#7ac1ff);
+
+        font-family: 'Kalam', cursive;
+    }
+
+    &__titremenu4 {
+        font-family: 'Kalam', cursive;
+        background-clip: initial;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image:-webkit-linear-gradient(left, #41963c, #beff7f);
     }
     
    
@@ -125,11 +156,7 @@
             @include menu-a;
             @include mobile-only-a;
             
-            background-clip: initial;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left,#0231df,#7ac1ff);
-            font-family: 'Parisienne', cursive;
+            
             
 
         }
@@ -160,11 +187,7 @@
             
             @include menu-a;
             @include mobile-only-a;
-            font-family: 'Kalam', cursive;
-            background-clip: initial;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image:-webkit-linear-gradient(left, #41963c, #beff7f);
+           
             
 
             
